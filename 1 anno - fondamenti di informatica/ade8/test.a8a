@@ -1,0 +1,22 @@
+jmp start
+
+A: 5h
+B: 2h
+C: 0h
+
+start:  ld A
+
+ciclo:  sub B
+        jz pari
+        jn dispari
+        jmp ciclo
+
+pari:   LDv 2h
+        st C
+        jmp fine
+
+dispari:LDv 14h
+        st C
+        jmp fine
+
+fine:   jmp fine

@@ -1,0 +1,16 @@
+### Definizione
+![[imgs/Pasted image 20231010153027.png]]
+detto con altre parole:
+Se le n-ple sono combinazioni lineari l'una dell'altra, allora è dipendente.
+In caso contrario indipendente (tutti gli scalari devono essere 0 per avere il vettore nullo)
+#### ESEMPIO
+![[imgs/Pasted image 20231010153115.png]]
+
+---
+![[imgs/Pasted image 20231010153201.png]]
+
+### Sottoinsiemi (in)dipendenti
+![[imgs/Pasted image 20231010153803.png]]
+![[imgs/Pasted image 20231010153858.png]]
+Detto con altre parole: se un vettore è combinazione lineare degli altri (in questo in X), allora la chiusura lineare è dipendente, ed è uguale alla stessa meno quel vettore (può essere "creato" con gli altri)
+
