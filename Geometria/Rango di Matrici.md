@@ -1,3 +1,3 @@
 ### Definizione
-![[imgs/Pasted image 20231014110134.png]]
-![[imgs/Pasted image 20231014110239.png]]
+![placeholder](./imgs/Pasted%20image%2020231014110134.png)
+![placeholder](./imgs/Pasted%20image%2020231014110239.png)

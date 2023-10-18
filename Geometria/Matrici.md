@@ -158,7 +158,7 @@ $d^i_j = \alpha * a^i_j$ -> moltiplico ogni elemento per $\alpha$
 Più matrici vengono sommate dopo essere state moltiplicate per il rispettivo scalare
 
 ### Prodotto tra matrici
-le due matrici devono essere [[Matrici#Matrici conformabili]]
+le due matrici devono essere [placeholder](Matrici#Matrici conformabili)
 $A*B = \displaystyle \sum_{k=1}^{n}a^i_kb^k_j$ -> prodotto naturale tra la i-esima riga di A e la j-esima colonna di B
 In generale se $(A,B)$ è conformabile **non è sicuro** che $(B,A)$ lo sia di conseguenza.
 

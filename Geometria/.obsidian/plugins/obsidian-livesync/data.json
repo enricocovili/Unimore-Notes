@@ -8,7 +8,7 @@
   "syncOnStart": false,
   "savingDelay": 200,
   "lessInformationInLog": false,
-  "gcDelay": 300,
+  "gcDelay": 0,
   "versionUpFlash": "",
   "minimumChunkSize": 20,
   "longLineThreshold": 250,
@@ -35,8 +35,8 @@
   "checkIntegrityOnSave": false,
   "batch_size": 50,
   "batches_limit": 40,
-  "useHistory": false,
-  "disableRequestURI": false,
+  "useHistory": true,
+  "disableRequestURI": true,
   "skipOlderFilesOnSync": true,
   "checkConflictOnlyOnOpen": false,
   "syncInternalFiles": false,
@@ -75,5 +75,6 @@
   "useIgnoreFiles": false,
   "ignoreFiles": ".gitignore",
   "syncOnEditorSave": false,
-  "pluginSyncExtendedSetting": {}
+  "pluginSyncExtendedSetting": {},
+  "useV1": false
 }

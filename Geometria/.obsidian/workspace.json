@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi e dimensioni.md",
-                "mode": "preview",
+                "file": "Somma e intersezione di sottospazi vettoriali.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -40,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi e dimensioni.md",
+                "file": "Somma e intersezione di sottospazi vettoriali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi e dimensioni.md",
+                "file": "Somma e intersezione di sottospazi vettoriali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi e dimensioni.md"
+                "file": "Somma e intersezione di sottospazi vettoriali.md"
               }
             }
           }
@@ -170,8 +170,10 @@
       "obsidian-livesync:Show Customization sync": false
     }
   },
-  "active": "34bbf6aa83ea0c6d",
+  "active": "64d63aeceb40a084",
   "lastOpenFiles": [
+    "Basi e dimensioni.md",
+    "Trasformazioni Lineari.md",
     "Determinante di Matrici quadrate.md",
     "Dipendenza e Indipendenza Lineare.md",
     "Insiemi.md",
@@ -191,9 +193,7 @@
     "imgs/Pasted image 20231014105349.png",
     "Pasted image 20231014110239.png",
     "Pasted image 20231014110134.png",
-    "Trasformazioni Lineari.md",
     "Spazi Vettoriali.md",
-    "Basi e dimensioni.md",
     "Definizione.md",
     "imgs/Pasted image 20230918173639.png.md",
     "imgs/Pasted image 20230918171207.png.md",

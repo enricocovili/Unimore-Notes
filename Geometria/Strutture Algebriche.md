@@ -1,18 +1,18 @@
 #### **Applicazioni composte**
 
-![[imgs/Pasted image 20230921121604.png]]
+![placeholder](./imgs/Pasted%20image%2020230921121604.png)
 
 #### **Composizione identica**
 
-![[imgs/Pasted image 20230921121648.png]]
+![placeholder](./imgs/Pasted%20image%2020230921121648.png)
 
 #### **Operazioni Binarie (interne)**
 
-![[imgs/Pasted image 20230921121735.png]]
+![placeholder](./imgs/Pasted%20image%2020230921121735.png)
 
 ## **Definizione di gruppo**
 
-![[imgs/Pasted image 20230921122208.png]]
+![placeholder](./imgs/Pasted%20image%2020230921122208.png)
 dove $u$ è l'elemento neutro in questione
 #### esempi
 - ($Z, +$) è un gruppo abeliano (**RICORDARE**: il $+$ non vuol dire per forza somma!!!)
@@ -26,7 +26,7 @@ $S(X),S(X) \to S(X)$
 $f,g \to g \circ f$
 $(S(X),\circ)$ è un gruppo? si, ma non abeliano
 1. E' associativa perchè l'applicazione è biunivoca
-2. L'elemento neutro è $Id_x$ (guardare [[Strutture Algebriche#**Composizione identica**]])
+2. L'elemento neutro è $Id_x$ (guardare [placeholder](Strutture Algebriche#**Composizione identica**))
 3. $\forall f \in S(x) \space \exists f' \in S(x)$ tale che $f^{-1}\circ f = f\circ f^{-1} = Id_x$
 
 In questo caso S(X) è abeliano con meno di 3 elementi
@@ -81,14 +81,14 @@ $n = p*q, \overline p * \overline q = \overline 0$, ci sarà almeno una coppia d
 
 
 ### Algebra di Boole (le proprietà non sono da sapere)
-![[imgs/Pasted image 20230921161126.png]]
+![placeholder](./imgs/Pasted%20image%2020230921161126.png)
 
 ### Sottostrutture
 Le sottostrutture sono strutture algebriche che godono delle stesse proprietà della struttura padre.
 Il controllo fondamentale da effettuare è che l'operazione interna rimanga interna nella sottostruttura
 
 ### omomorfismo e isomorfismo
-![[imgs/Pasted image 20230921161424.png]]
+![placeholder](./imgs/Pasted%20image%2020230921161424.png)
 In poche parole, se applico l'operazione binaria interna prima di spostare gli elementi nel sottogruppo, il risultato è uguale.
 
 #### esempio:
@@ -114,7 +114,7 @@ ne $(P(X),\cup)$ ne $(P(X),\cap)$ sono gruppi
 
 ## n-ple
 K è un campo
-![[imgs/Pasted image 20230921163416.png]]
+![placeholder](./imgs/Pasted%20image%2020230921163416.png)
 ### Permutazioni di n-ple
 Si dice $S_n$ l'insieme delle permutazioni di su $\mathbb N_n$ ($n!$ elementi)
 
@@ -127,7 +127,7 @@ Numero permutazioni dispari, segno negativo, altrimenti positivo.
 
 E' detta trasposizione o scambio una permutazione in cui è stato effettuato un solo spostamento tra valori. Il segno è negativo $p(n) = 1$
 ### Combinazione lineare
-![[imgs/Pasted image 20230921163745.png]]
+![placeholder](./imgs/Pasted%20image%2020230921163745.png)
 
 ### Anello di polinomi
-![[imgs/Pasted image 20230921164008.png]]
+![placeholder](./imgs/Pasted%20image%2020230921164008.png)

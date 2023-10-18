@@ -23,8 +23,8 @@ importante $f(x) = e^x$
 $f$ inversa dell'esponenziale
 $y= \log_{a}x \iff a^y=x$ (RICORDA: quale esponente devo mettere alla base per avere x?)
 #### proprietà
-![[Pasted image 20230921111435.png]]
-![[Pasted image 20230921111505.png]]
+![placeholder](Pasted image 20230921111435.png)
+![placeholder](Pasted image 20230921111505.png)
 ### Composta
 se $g: X \to Y$ e $f:Y \to Z$
 allora $f \circ g: X \to Z$ è $f \circ g (x) = f(g(x))$
@@ -48,7 +48,7 @@ $$
 - $|x_1*x_2| = |x_1|*|x_2|$
 - $|x_1/x_2| = |x_1|/|x_2|$
 - $|x|< o < r \iff -r < x < r$ (vale anche con $\le$)
-![[Pasted image 20230921110551.png]] esempio con r=2
+![placeholder](Pasted image 20230921110551.png) esempio con r=2
 
 ### Disuguaglianza triangolare
 $\forall (x_1,x_2), x_1,x_2 \in R$
@@ -60,7 +60,7 @@ $-(|x_1|+|x_2|) \le x_1+x_2 \le |x_1|+ |x_2| \to |x_1+x_2| \le |x_1|+|x_2|$
 
 ## Funzioni trigonometriche
 
-![[Pasted image 20230921111606.png]]
+![placeholder](Pasted image 20230921111606.png)
 $x^°:x^{rad} = 360^°:2\pi_{rad}$
 $-1 \le sen(x),cos(x) \le +1$
 $sen(x)^2 + cos(x)^2 = 1$

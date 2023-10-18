@@ -11,7 +11,7 @@ unisco tutto
 $x_1^{n+1}<x_2^n*x_1<x_1^n*x_2<x_2^{n+1}$ dimostrato
 
 **- dimostrare la somma dei prini n numeri naturali:**
-![[Pasted image 20230921112859.png]]
+![placeholder](Pasted image 20230921112859.png)
 
 **- dimostrare la disuguaglianza di bernoulli**
-![[Pasted image 20230921113003.png]]
+![placeholder](Pasted image 20230921113003.png)

@@ -2,16 +2,16 @@
 - #### suriettiva
 	- $\forall b \in B, \exists a \in A, f(a)=b$
 	- l'immagine copre tutto l'insieme B
- ![[Pasted image 20230919100311.png]]
+ ![placeholder](Pasted image 20230919100311.png)
 - #### iniettiva
 	- $(f(a') = f(a^") \to (a'=a^"))$
 	- $\forall a' \ne a^", \{a',a^"\} \in A, f(a') \ne f(a^")$
 	- c'è un immagine unica -> a un valore dell'immagine corrisponde un valore diverso della controimmagine
- ![[Pasted image 20230919100330.png]]
+ ![placeholder](Pasted image 20230919100330.png)
 - #### biettiva
 	- $\forall b \in B, \exists ! a \in A, f(a)=b$
 	- c'è un valore di partenza e uno di arrivo unico
- ![[Pasted image 20230919100402.png]]
+ ![placeholder](Pasted image 20230919100402.png)
 esempi:
 $f:R \to R_0^+$
 $x \to x^2$
