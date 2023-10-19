@@ -4,43 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "761d2991414a88b0",
+        "id": "ee13ea62429647f1",
         "type": "tabs",
         "children": [
           {
-            "id": "edf60516cdb0e7c9",
+            "id": "affaca88a7bcd062",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Trasformazioni Lineari.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "64d63aeceb40a084",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Somma e intersezione di sottospazi vettoriali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34bbf6aa83ea0c6d",
-            "type": "leaf",
-            "state": {
-              "type": "log-log",
+              "type": "graph",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "placeholder",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Somma e intersezione di sottospazi vettoriali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Somma e intersezione di sottospazi vettoriali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Somma e intersezione di sottospazi vettoriali.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -164,39 +135,48 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-livesync:Replicate": false,
-      "obsidian-livesync:Show log": false,
-      "obsidian-livesync:Show Customization sync": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "64d63aeceb40a084",
+  "active": "affaca88a7bcd062",
   "lastOpenFiles": [
-    "Basi e dimensioni.md",
-    "Trasformazioni Lineari.md",
-    "Determinante di Matrici quadrate.md",
-    "Dipendenza e Indipendenza Lineare.md",
-    "Insiemi.md",
-    "Matrici.md",
+    "Spazi Vettoriali.md",
     "Rango di Matrici.md",
+    "sedJLmgYk",
+    "Dipendenza e Indipendenza Lineare.md",
+    "Determinante di Matrici quadrate.md",
+    "Determinante di Matrici_quadrate.md",
+    "Dipendenza e Indipendenza_Lineare.md",
     "Somma e intersezione di sottospazi vettoriali.md",
     "Strutture Algebriche.md",
+    "Trasformazioni Lineari.md",
+    "Basi e dimensioni.md",
+    "Dipendenza_e_Indipendenza_Lineare.md",
+    "Determinante_di_Matrici_quadrate.md",
+    "Rango_di_Matrici.md",
+    "Strutture_Algebriche.md",
+    "imgs/Pasted_image_20230921163745.png",
+    "imgs/Pasted_image_20231010163038.png",
+    "imgs/Pasted_image_20231010165210.png",
+    "imgs/Pasted_image_20231010162657.png",
+    "imgs/Pasted_image_20231010162545.png",
+    "imgs/Pasted_image_20231012145711.png",
+    "imgs/Pasted_image_20231010165454.png",
+    "imgs/Pasted_image_20231014105659.png",
+    "imgs/Pasted_image_20231012145655.png",
+    "imgs/Pasted_image_20231008103700.png",
+    "Basi_e_dimensioni.md",
+    "Trasformazioni_Lineari.md",
+    "Spazi_Vettoriali.md",
+    "Somma_e_intersezione_di_sottospazi_vettoriali.md",
+    "Matrici.md",
+    "Insiemi.md",
+    "Strutture.md",
+    "Spazi.md",
     "imgs/imgs/Pasted image 20231010165210.png.md",
     "imgs/imgs",
-    "imgs/Pasted image 20231014110239.png",
-    "imgs/Pasted image 20231014110134.png",
-    "imgs/Pasted image 20231014105955.png",
-    "imgs/Pasted image 20231014105752.png",
-    "imgs/Pasted image 20231014105659.png",
-    "imgs/Pasted image 20231014105540.png",
-    "imgs/Pasted image 20231014105429.png",
-    "imgs/Pasted image 20231014105349.png",
-    "Pasted image 20231014110239.png",
-    "Pasted image 20231014110134.png",
-    "Spazi Vettoriali.md",
     "Definizione.md",
     "imgs/Pasted image 20230918173639.png.md",
-    "imgs/Pasted image 20230918171207.png.md",
     "Untitled.canvas",
     "imgs"
   ]
