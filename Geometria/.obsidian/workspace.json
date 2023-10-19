@@ -11,8 +11,12 @@
             "id": "affaca88a7bcd062",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Sistemi Lineari.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Sistemi Lineari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Sistemi Lineari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Sistemi Lineari.md"
+              }
             }
           }
         ]
@@ -135,13 +143,30 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "affaca88a7bcd062",
   "lastOpenFiles": [
-    "Spazi Vettoriali.md",
+    "imgs/Pasted_image_20231019160910.png",
+    "imgs/Pasted_image_20231019160836.png",
+    "imgs/Pasted_image_20231019154758.png",
+    "imgs/Pasted_image_20231019154738.png",
+    "imgs/Pasted_image_20231019154921.png",
+    "imgs/Pasted_image_20231019154251.png",
+    "imgs/Pasted_image_20231019160825.png",
+    "imgs/Pasted_image_20231019154100.png",
+    "imgs/Pasted_image_20231019154218.png",
+    "imgs/Pasted_image_20231019160941.png",
+    "imgs/Pasted_image_20231019154120.png",
     "Rango di Matrici.md",
+    "Trasformazioni Lineari.md",
+    "Geometria_Uni.pdf",
+    "Sistemi Lineari.md",
+    "Matrici.md",
+    "test.sh",
+    "Spazi Vettoriali.md",
     "sedJLmgYk",
     "Dipendenza e Indipendenza Lineare.md",
     "Determinante di Matrici quadrate.md",
@@ -149,34 +174,21 @@
     "Dipendenza e Indipendenza_Lineare.md",
     "Somma e intersezione di sottospazi vettoriali.md",
     "Strutture Algebriche.md",
-    "Trasformazioni Lineari.md",
     "Basi e dimensioni.md",
     "Dipendenza_e_Indipendenza_Lineare.md",
     "Determinante_di_Matrici_quadrate.md",
     "Rango_di_Matrici.md",
     "Strutture_Algebriche.md",
-    "imgs/Pasted_image_20230921163745.png",
-    "imgs/Pasted_image_20231010163038.png",
-    "imgs/Pasted_image_20231010165210.png",
-    "imgs/Pasted_image_20231010162657.png",
-    "imgs/Pasted_image_20231010162545.png",
-    "imgs/Pasted_image_20231012145711.png",
-    "imgs/Pasted_image_20231010165454.png",
-    "imgs/Pasted_image_20231014105659.png",
-    "imgs/Pasted_image_20231012145655.png",
-    "imgs/Pasted_image_20231008103700.png",
     "Basi_e_dimensioni.md",
     "Trasformazioni_Lineari.md",
     "Spazi_Vettoriali.md",
     "Somma_e_intersezione_di_sottospazi_vettoriali.md",
-    "Matrici.md",
     "Insiemi.md",
     "Strutture.md",
     "Spazi.md",
     "imgs/imgs/Pasted image 20231010165210.png.md",
     "imgs/imgs",
     "Definizione.md",
-    "imgs/Pasted image 20230918173639.png.md",
     "Untitled.canvas",
     "imgs"
   ]
