@@ -6,6 +6,12 @@ cd imgs
 find . -depth -name '* *' \
 | while IFS= read -r f ; do mv -i "$f" "$(dirname "$f")/$(basename "$f"|tr ' ' _)" ; done
 cd ..
-# replace all occurences of ![[Pasted Image XXX.png]] with ![placeholder](./imgs/Pasted_Image_XXX.png)
-find . -name "*.md" -type f -exec sed -i '' -e 's/\!\[\[Pasted Image [0-9]*\.png\]\]/\!\[placeholder\]\(\.\/imgs\/Pasted_Image_[0-9]*\.png\)/g' {} \;
-# the above command is giving me an error: sed: can't read : No such file or directory. please fix it
+
+# regex da ricordare
+# \.png\]\] -> .png)                                                .png]] -> .png)
+# !\[\[Pasted image -> ![placeholder](./imgs/Pasted_image_          ![[Pasted image  -> ![placeholder](./imgs/Pasted_image_
+
+# replace all .png]] with .png)
+sed -i 's/\.png\]\]/.png)/g' *.md
+# replace all ![[Pasted image with ![placeholder](./imgs/Pasted_image_
+sed -i 's/!\[\[Pasted image/![placeholder](\.\/imgs\/Pasted_image_/g' *.md

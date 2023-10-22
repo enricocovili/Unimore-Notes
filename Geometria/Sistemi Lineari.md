@@ -45,3 +45,18 @@ Inoltre, le soluzioni di un sistema lineare, se esistono, sono tante quante le s
 
 ### Proprietà derivate dalla [[#Dimensione del sottospazio vettoriale delle soluzioni]]
 ![placeholder](./imgs/Pasted_image_20231019160941.png)
+
+### Sistema normale (o di Cramer)
+![placeholder](./imgs/Pasted_image_20231022105128.png)
+
+### Teorema di Cramer
+![placeholder](./imgs/Pasted_image_20231022105141.png)
+
+### Formula di Leibniz-Cramer
+![placeholder](./imgs/Pasted_image_20231022105205.png)
+
+### Sistema lineare minimo
+![placeholder](./imgs/Pasted_image_20231022105659.png)
+
+### Sistemi lineari equivalenti
+![placeholder](./imgs/Pasted_image_20231022105635.png)

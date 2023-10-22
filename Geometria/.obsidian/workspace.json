@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ee13ea62429647f1",
+        "id": "6ec4539776b477f3",
         "type": "tabs",
         "children": [
           {
-            "id": "affaca88a7bcd062",
+            "id": "83ef8d6beb29e6c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a35184f86db6a2f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Risoluzione di sistemi lineari.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi Lineari.md",
+                "file": "Risoluzione di sistemi lineari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi Lineari.md",
+                "file": "Risoluzione di sistemi lineari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi Lineari.md"
+                "file": "Risoluzione di sistemi lineari.md"
               }
             }
           }
@@ -147,33 +160,34 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "affaca88a7bcd062",
+  "active": "a35184f86db6a2f9",
   "lastOpenFiles": [
-    "imgs/Pasted_image_20231019160910.png",
-    "imgs/Pasted_image_20231019160836.png",
-    "imgs/Pasted_image_20231019154758.png",
-    "imgs/Pasted_image_20231019154738.png",
-    "imgs/Pasted_image_20231019154921.png",
-    "imgs/Pasted_image_20231019154251.png",
-    "imgs/Pasted_image_20231019160825.png",
-    "imgs/Pasted_image_20231019154100.png",
-    "imgs/Pasted_image_20231019154218.png",
-    "imgs/Pasted_image_20231019160941.png",
-    "imgs/Pasted_image_20231019154120.png",
-    "Rango di Matrici.md",
-    "Trasformazioni Lineari.md",
-    "Geometria_Uni.pdf",
+    "imgs/Pasted_image_20231022105635.png",
+    "imgs/Pasted_image_20231022105141.png",
+    "imgs/Pasted_image_20231022113819.png",
+    "imgs/Pasted_image_20231022105128.png",
+    "imgs/Pasted_image_20231022105205.png",
+    "imgs/Pasted_image_20231022113502.png",
+    "imgs/Pasted_image_20231022105659.png",
+    "imgs/Pasted image 20231022105635.png",
+    "imgs/Pasted image 20231022105141.png",
+    "Pasted image 20231022113819.png",
+    "Pasted image 20231022113502.png",
     "Sistemi Lineari.md",
+    "Risoluzione di sistemi lineari.md",
+    "Trasformazioni Lineari.md",
+    "Strutture Algebriche.md",
+    "Spazi Vettoriali.md",
+    "Rango di Matrici.md",
+    "Geometria_Uni.pdf",
     "Matrici.md",
     "test.sh",
-    "Spazi Vettoriali.md",
     "sedJLmgYk",
     "Dipendenza e Indipendenza Lineare.md",
     "Determinante di Matrici quadrate.md",
     "Determinante di Matrici_quadrate.md",
     "Dipendenza e Indipendenza_Lineare.md",
     "Somma e intersezione di sottospazi vettoriali.md",
-    "Strutture Algebriche.md",
     "Basi e dimensioni.md",
     "Dipendenza_e_Indipendenza_Lineare.md",
     "Determinante_di_Matrici_quadrate.md",
@@ -188,7 +202,6 @@
     "Spazi.md",
     "imgs/imgs/Pasted image 20231010165210.png.md",
     "imgs/imgs",
-    "Definizione.md",
     "Untitled.canvas",
     "imgs"
   ]
