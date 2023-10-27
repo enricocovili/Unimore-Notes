@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "18bb5366b68ebabb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Autovalori.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rappresentazione di sottospazi vettoriali.md",
+                "file": "Autovalori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rappresentazione di sottospazi vettoriali.md",
+                "file": "Autovalori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rappresentazione di sottospazi vettoriali.md"
+                "file": "Autovalori.md"
               }
             }
           }
@@ -147,27 +160,29 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "bf41208446b697f2",
+  "active": "18bb5366b68ebabb",
   "lastOpenFiles": [
+    "Pasted image 20231027091347.png",
+    "Pasted image 20231027091345.png",
+    "Rappresentazione di sottospazi vettoriali.md",
+    "Autovalori.md",
+    "Sistemi Lineari.md",
+    "Rango di Matrici.md",
+    "Basi e dimensioni.md",
+    "Strutture Algebriche.md",
+    "Trasformazioni Lineari.md",
+    "Geometria_Uni.pdf.part",
     "imgs/Pasted_image_20231024102534.png",
     "imgs/Pasted_image_20231024102719.png",
     "imgs/Pasted_image_20231024100335.png",
     "Pasted image 20231024102719.png",
     "Pasted image 20231024102716.png",
-    "Rappresentazione di sottospazi vettoriali.md",
     "Risoluzione di sistemi lineari.md",
     "Pasted image 20231024100335.png",
-    "Sistemi Lineari.md",
     "Pasted image 20231024100333.png",
     "Pasted image 20231024102534.png",
-    "Geometria_Uni.pdf.part",
     "imgs/Pasted_image_20231022105635.png",
-    "imgs/Pasted_image_20231022105141.png",
-    "imgs/Pasted_image_20231022113819.png",
-    "Trasformazioni Lineari.md",
-    "Strutture Algebriche.md",
     "Spazi Vettoriali.md",
-    "Rango di Matrici.md",
     "Geometria_Uni.pdf",
     "Matrici.md",
     "test.sh",
@@ -177,7 +192,6 @@
     "Determinante di Matrici_quadrate.md",
     "Dipendenza e Indipendenza_Lineare.md",
     "Somma e intersezione di sottospazi vettoriali.md",
-    "Basi e dimensioni.md",
     "Dipendenza_e_Indipendenza_Lineare.md",
     "Determinante_di_Matrici_quadrate.md",
     "Rango_di_Matrici.md",
@@ -188,7 +202,6 @@
     "Somma_e_intersezione_di_sottospazi_vettoriali.md",
     "Insiemi.md",
     "Strutture.md",
-    "Spazi.md",
     "imgs/imgs",
     "Untitled.canvas",
     "imgs"

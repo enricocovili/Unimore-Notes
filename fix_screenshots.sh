@@ -14,4 +14,4 @@ cd ..
 # replace all .png]] with .png)
 sed -i 's/\.png\]\]/.png)/g' *.md
 # replace all ![[Pasted image with ![placeholder](./imgs/Pasted_image_
-sed -i 's/!\[\[Pasted image/![placeholder](\.\/imgs\/Pasted_image_/g' *.md
+sed -i 's/!\[\[Pasted image /![placeholder](\.\/imgs\/Pasted_image_/g' *.md
