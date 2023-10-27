@@ -1,5 +1,5 @@
 ### Definizione
-![[Pasted image 20231027091347.png]]
+![placeholder](./imgs/Pasted_image_20231027091347.png)
 #### esempio
 $T: \mathbb R^2 \to \mathbb R^2$
 $(x,y) \to (4x-y, 2x+y)$
