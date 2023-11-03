@@ -16,3 +16,4 @@ $V_3(T)$ è un **autospazio** relativo all'autovalore 3
 E' possibile che un sottospazio non abbia autovalori:
 ![placeholder](./imgs/Pasted_image_20231028093109.png)
 
+Strettamente legato all'autovalore e autovettore è lo studio del [[Polinomio caratteristico]]

@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bf41208446b697f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rappresentazione di sottospazi vettoriali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18bb5366b68ebabb",
+            "id": "6e6239316bd2982e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "4deaca32cbe88789",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Polinomio caratteristico.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "placeholder",
+                "query": "polinomio",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Polinomio caratteristico.md",
+                "file": "Auto valori-vettori-spazi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Polinomio caratteristico.md",
+                "file": "Auto valori-vettori-spazi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Polinomio caratteristico.md"
+                "file": "Auto valori-vettori-spazi.md"
               }
             }
           }
@@ -172,36 +147,37 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "4deaca32cbe88789",
+  "active": "6e6239316bd2982e",
   "lastOpenFiles": [
+    "imgs/Pasted_image_20231030121425.png",
+    "imgs/Pasted_image_20231030122600.png",
+    "imgs/Pasted_image_20231102113343.png",
+    "imgs/Pasted_image_20231030121922.png",
+    "Polinomio caratteristico.md",
+    "Auto valori-vettori-spazi.md",
+    "Risoluzione di sistemi lineari.md",
+    "Base-Teorema Spettrale.md",
+    "Pasted image 20231102113343.png",
+    "Matrici.md",
+    "Rango di Matrici.md",
+    "Sistemi Lineari.md",
+    "Determinante di Matrici quadrate.md",
+    "Geometria_Uni.pdf.part",
+    "Pasted image 20231030122600.png",
+    "Pasted image 20231030121922.png",
+    "Pasted image 20231030121425.png",
+    "Rappresentazione di sottospazi vettoriali.md",
     "imgs/Pasted_image_20231028094021.png",
     "imgs/Pasted_image_20231028100736.png",
     "imgs/Pasted_image_20231028102934.png",
-    "imgs/Pasted_image_20231028103351.png",
-    "imgs/Pasted_image_20231028102949.png",
-    "imgs/Pasted_image_20231028093418.png",
-    "imgs/Pasted_image_20231028103317.png",
-    "imgs/Pasted_image_20231028093109.png",
-    "imgs/Pasted_image_20231028103411.png",
-    "imgs/Pasted_image_20231028092957.png",
-    "imgs/Pasted image 20231028102934.png",
-    "Geometria_Uni.pdf.part",
-    "Auto valori-vettori-spazi.md",
-    "Polinomio caratteristico.md",
-    "Rappresentazione di sottospazi vettoriali.md",
     "Trasformazioni Lineari.md",
-    "Sistemi Lineari.md",
-    "Rango di Matrici.md",
     "Basi e dimensioni.md",
     "Strutture Algebriche.md",
-    "Risoluzione di sistemi lineari.md",
     "Spazi Vettoriali.md",
     "Geometria_Uni.pdf",
-    "Matrici.md",
     "test.sh",
     "sedJLmgYk",
     "Dipendenza e Indipendenza Lineare.md",
-    "Determinante di Matrici quadrate.md",
     "Determinante di Matrici_quadrate.md",
     "Dipendenza e Indipendenza_Lineare.md",
     "Somma e intersezione di sottospazi vettoriali.md",
@@ -213,7 +189,6 @@
     "Trasformazioni_Lineari.md",
     "Spazi_Vettoriali.md",
     "Somma_e_intersezione_di_sottospazi_vettoriali.md",
-    "Insiemi.md",
     "imgs/imgs",
     "Untitled.canvas",
     "imgs"
