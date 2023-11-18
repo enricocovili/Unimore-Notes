@@ -1,0 +1,121 @@
+[]()### Introduzione
+- Concetti fondamentali sui numeri Reali
+- Assioma di completezza
+- Concetti fondamentali su insiemistica
+- c^2 = 2 non è razionale. DIMOSTRAZIONE
+- Concetti fondamentali sulle funzioni (proprietà, dominio e codominio...)
+	- iniettiva, suriettiva, biettiva (invertibile)
+	- (strettamente) monotona
+- Tipi diversi di funzioni elementari (con relative proprietà)
+	- lineare
+	- valore assoluto
+	- potenza, esponenziale, logaritmo
+	- trigonometriche (sin, cos, tan)
+- Disuguaglianza triangolare. DIMOSTRAZIONE
+- Principio di induzione
+- Disuguaglianza di Bernoulli. DIMOSTRAZIONE con induzione
+- Massimo e Minimo
+- Teorema unicità del massimo e minimo. DIMOSTRAZIONE
+- Maggiorante e Minorante
+- Un insieme è limitato se e solo se esiste un M>0 tc |a| <= M per ogni a. DIMOSTRAZIONE
+- Estremo superiore e inferiore
+- Teorema esistenza estremo superiore. DIMOSTRAZIONE
+### Successioni
+- Definizione di successione
+- Definizione di successione limitata, superiormente o inferiormente (o entrambe)
+- Proposizioni definitivamente vere e frequentemente vere
+- Teorema limite superiore successioni. DIMOSTRAZIONE
+- Successioni convergenti
+- Teorema unicità del limite nelle successioni. DIMOSTRAZIONE
+- Successioni divergenti
+- Teorema dell'esistenza di un limite nelle successioni convergenti. DIMOSTRAZIONE
+- Definizione di crescenza e decrescenza
+- Teorema di regolarità delle funzioni monotone. DIMOSTRAZIONE
+- Definizione numero di nepero. DIMOSTRAZIONE del fatto che è limitata e crescente
+#### Limiti nelle successioni
+- Operazioni con i limiti. DIMOSTRAZIONE
+- Forme indeterminate
+- Teorema della permanenza del segno (successioni). DIMOSTRAZIONE
+- se $\displaystyle \lim_{x \to \infty} a_n=a$ e $a_n \ge 0$ allora $a \ge 0$. DIMOSTRAZIONE
+- se $\displaystyle \lim_{x \to \infty} a_n=a$ e $\displaystyle \lim_{x \to \infty} b_n=b$ allora a$\ge$b. DIMOSTRAZIONE
+- Teorema dei carabinieri. DIMOSTRAZIONE
+- $a_n$ converge a 0 se e solo se |$a_n$| converge a 0. DIMOSTRAZIONE
+- Teorema del prodotto tra funzioni limitate e infinitesime. DIMOSTRAZIONE
+- Criterio del rapporto (ordini di infiniti). DIMOSTRAZIONE
+- ordini di infiniti (la "scala" delle funzioni). DIMOSTRAZIONE
+#### Limiti notevoli nelle successioni
+- $\displaystyle \lim_{x \to \infty} a_n$. DIMOSTRAZIONE vari casi
+	- $+\infty$ se a> 1
+	- 1 se a=1
+	- 0 se |a|<1
+	- non esiste se a <= -1
+- $\displaystyle \lim_{n \to \infty}\sqrt[n]{a} = 1$ con a>0. DIMOSTRAZIONE
+- $\displaystyle \lim_{n \to \infty}\sqrt[n]{n^a} = 1, a \in \mathbb R$. DIMOSTRAZIONE
+- se $a_n \to 0$, sin($a_n$)=0 e cos($a_n=1$). DIMOSTRAZIONE
+- $\displaystyle \lim_{n \to \infty}\frac{sin(a_n)}{a_n} = 1$. DIMOSTRAZIONE
+### Intorni e intervalli
+- Intervalli chiusi e aperti
+- Definizione di intervallo
+- Punti di accumulazione
+- Punti isolati
+- Definizione di limite in un punto (con dim di epsilon)
+- Teorema per cui due def di limite sono uguali. DIMOSTRAZIONE
+- Definizione limite destro e sinistro
+### Funzioni
+- Definizione di continua (anche in un intervallo)
+- Continuità delle operazioni con funzioni continue
+- Tipi di discontinuità (1,2,3 specie)
+- Teorema della permanenza del segno (funzioni). DIMOSTRAZIONE
+- Teorema di esistenza degli zeri (funzioni). DIMOSTRAZIONE
+- Teorema 1 di esistenza di valori intermedi. DIMOSTRAZIONE
+- Definizione di asintoti verticali/orizzontali/obliqui
+- Teorema di Weierstrass
+- Teorema 2 di esistenza degli zeri (funzioni). DIMOSTRAZIONE
+- Teorema di monotonia delle funzioni. DIMOSTRAZIONE
+- Rapporto tra continuità/monotonia e invertibilità
+- Teorema di esistenza di un intervallo I, se la funzione è continua in I. DIMOSTRAZIONE
+- Teorema di esistenza di massimo e minimo nel caso ci sia un asintoto verticale. DIMOSTRAZIONE
+- Inverse di funzioni trigonometriche
+
+### Derivate
+- Definizione di derivata
+- Rapporto incrementale
+- Definizione di derivabilità
+- Derivate f. elementari
+- Punti angolosi, cuspidi, flessi a tangente verticale
+- Teorema della continuità delle f. derivabili. DIMOSTRAZIONE
+- Algebra delle derivate. DIMOSTRAZIONE
+- Teorema della derivata dell'inversa. DIMOSTRAZIONE
+- Derivate funzioni inverse trigonometriche. DIMOSTRAZIONE
+- Significato geometrico retta tangente
+- Definizione massimo, minimo (globale/locale)
+- Teorema di Fermat. DIMOSTRAZIONE
+- Punti stazionari e flessi a tangente orizzontale
+- Teorema di Rolle. DIMOSTRAZIONE
+- Teorema di Lagrange
+- Teorema del criterio di monotonia. DIMOSTRAZIONE
+- Teorema della caratterizzazione delle funz. in base alla derivata. DIMOSTRAZIONE
+- Definizione funzione concava/convessa e epigrafico
+- Punti di flesso
+- Teorema del criterio di convessità. DIMOSTRAZIONE
+- Teorema del flesso studiando la derivata seconda
+- Teorema di de l'hopital
+- Formula di taylor e "o piccolo"
+- Teorema della relazione tra "o piccolo" e asintoti. DIMOSTRAZIONE
+- Polinomio di MacLaurin
+- Teorema formula di Mac Laurin con resto di Peano. DIMOSTRAZIONE
+- Teorema formula di Taylor con resto di Peano. DIMOSTRAZIONE
+- Algebra degli "o piccoli". DIMOSTRAZIONE
+- Teorema formula di Taylor con resto di Lagrange.
+
+### Integrali definiti
+- Definizione di partizione
+- Somme integrali superiori e inferiori
+- Lemma sulla grandezza delle partizioni di unioni di insiemi. DIMOSTRAZIONE
+- Integrazione secondo Riemann
+- Teorema caratterizzazione delle funzioni integrabili. DIMOSTRAZIONE
+- Proprietà integrali definiti
+- Teorema della media. DIMOSTRAZIONE
+- Funzioni uniformemente continue
+- Teorema di Cantor
+- Teorema di integrabilità delle funzioni continue. DIMOSTRAZIONE
