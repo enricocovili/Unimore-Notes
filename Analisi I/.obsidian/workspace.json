@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "41d1b8f01613c848",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa95ec7888681b92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9774fc790237526",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lista argomenti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d35fc895d5bd9848",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b98f5c135b45625",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eaeee8fc8a792cfe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "289961fc722144e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "557876e9d8834950",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "25e10ddff988e2a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f95ae668fd3770c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c952f7c1de7d7d31",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lista argomenti.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9bb2cf95c6b8cf54",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Lista argomenti.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6f1a0242094cc260",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1697690aec28ffe3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Lista argomenti.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e9774fc790237526",
+  "lastOpenFiles": [
+    "Lista argomenti.md",
+    "latexcheatsheet.pdf",
+    "Caratteristiche delle funzioni.md",
+    "Funzioni Elementari.md",
+    "Principio di Induzione.md",
+    "Successioni.md"
+  ]
+}
