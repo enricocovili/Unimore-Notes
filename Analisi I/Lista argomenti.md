@@ -119,3 +119,9 @@
 - Funzioni uniformemente continue
 - Teorema di Cantor
 - Teorema di integrabilità delle funzioni continue. DIMOSTRAZIONE
+
+### Integrali indefiniti
+- Teorema fondamentale del calcolo integrale. DIMOSTRAZIONE
+- Definizione di primitiva
+- Categorizzazione delle primitive. DIMOSTRAZIONE
+- Formula fondamentale del calcolo integrale. DIMOSTRAZIONE
