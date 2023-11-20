@@ -119,6 +119,7 @@
 - Funzioni uniformemente continue
 - Teorema di Cantor
 - Teorema di integrabilità delle funzioni continue. DIMOSTRAZIONE
+- Definizione funzione lipschitziana
 
 ### Integrali indefiniti
 - Teorema fondamentale del calcolo integrale. DIMOSTRAZIONE
