@@ -1,4 +1,4 @@
-[]()### Introduzione
+### Introduzione
 - Concetti fondamentali sui numeri Reali
 - Assioma di completezza
 - Concetti fondamentali su insiemistica
@@ -126,3 +126,6 @@
 - Definizione di primitiva
 - Categorizzazione delle primitive. DIMOSTRAZIONE
 - Formula fondamentale del calcolo integrale. DIMOSTRAZIONE
+- Definizione di integrale indefinito
+- Proprietà dell'integrale indefinito
+- Integrali fondamentali
