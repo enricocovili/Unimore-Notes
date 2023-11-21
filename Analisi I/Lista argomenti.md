@@ -1,17 +1,17 @@
 ### Introduzione
-- Concetti fondamentali sui numeri Reali
-- Assioma di completezza
-- Concetti fondamentali su insiemistica
-- c^2 = 2 non è razionale. DIMOSTRAZIONE
+- Concetti fondamentali sui numeri Reali ✅
+- Assioma di completezza ✅
+- Concetti fondamentali su insiemistica ✅
+- c^2 = 2 non è razionale. DIMOSTRAZIONE ✅
 - Concetti fondamentali sulle funzioni (proprietà, dominio e codominio...)
-	- iniettiva, suriettiva, biettiva (invertibile)
-	- (strettamente) monotona
+	- iniettiva, suriettiva, biettiva (invertibile) ✅
+	- (strettamente) monotona ✅
 - Tipi diversi di funzioni elementari (con relative proprietà)
-	- lineare
-	- valore assoluto
-	- potenza, esponenziale, logaritmo
-	- trigonometriche (sin, cos, tan)
-- Disuguaglianza triangolare. DIMOSTRAZIONE
+	- lineare ✅
+	- valore assoluto ✅
+	- potenza, esponenziale, logaritmo ✅
+	- trigonometriche (sin, cos, tan) ✅
+- Disuguaglianza triangolare. DIMOSTRAZIONE ✅
 - Principio di induzione
 - Disuguaglianza di Bernoulli. DIMOSTRAZIONE con induzione
 - Massimo e Minimo
