@@ -1,6 +1,6 @@
 ### Definizione
-![[Pasted image 20231121172846.png]]
+![placeholder](./imgs/Pasted_image_20231121172846.png)
 
 ### Dimostrazione della definizione
-![[Pasted image 20231121172902.png]]
-![[Pasted image 20231121173004.png]]
+![placeholder](./imgs/Pasted_image_20231121172902.png)
+![placeholder](./imgs/Pasted_image_20231121173004.png)
