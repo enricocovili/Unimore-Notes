@@ -102,9 +102,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "788b06a640f1f8cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rappresentazione di sottospazi euclidei.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b9bd8c3bcaf0a0b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spazio euclideo E3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -170,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sottospazi Euclidei.md",
+                "file": "Spazio euclideo E3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sottospazi Euclidei.md",
+                "file": "Spazio euclideo E3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sottospazi Euclidei.md"
+                "file": "Spazio euclideo E3.md"
               }
             }
           }
@@ -232,23 +256,25 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "4111afd5b62bbf9a",
+  "active": "b9bd8c3bcaf0a0b0",
   "lastOpenFiles": [
-    "Pasted image 20231118154856.png",
-    "Pasted image 20231118154829.png",
-    "Sistemi di riferimento.md",
+    "Pasted image 20231121173004.png",
+    "Pasted image 20231121172902.png",
+    "Pasted image 20231121172846.png",
+    "Rappresentazione di sottospazi euclidei.md",
+    "Spazio euclideo E3.md",
+    "Pasted image 20231121172112.png",
+    "Pasted image 20231121172043.png",
+    "Pasted image 20231121172007.png",
     "Sottospazi Euclidei.md",
-    "Pasted image 20231118154652.png",
-    "Pasted image 20231118154637.png",
-    "Pasted image 20231118154437.png",
-    "Pasted image 20231118154117.png",
+    "Pasted image 20231121171836.png",
+    "Pasted image 20231121171739.png",
+    "Pasted image 20231121171726.png",
+    "Pasted image 20231121171621.png",
+    "Pasted image 20231121171148.png",
+    "Sistemi di riferimento.md",
     "Spazi Euclidei.md",
-    "Pasted image 20231118154008.png",
-    "Pasted image 20231118153808.png",
-    "Pasted image 20231118153726.png",
     "Orientazione spazi vettoriali euclidei.md",
-    "Pasted image 20231116123351.png",
-    "Pasted image 20231116123305.png",
     "Complemento Ortogonale.md",
     "Trasformazioni Ortogonali.md",
     "latexcheatsheet.pdf",
@@ -270,12 +296,10 @@
     "Somma e intersezione di sottospazi vettoriali.md",
     "Spazi Vettoriali.md",
     "Matrici.md",
-    "Strutture Algebriche.md",
     "Geometria_Uni.pdf",
     "Geometria_Uni.pdf.part",
     "test.sh",
     "sedJLmgYk",
-    "Determinante di Matrici_quadrate.md",
     "imgs/imgs",
     "Untitled.canvas",
     "imgs"
