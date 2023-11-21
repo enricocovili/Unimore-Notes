@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir imgs > /dev/null 2>&1
 mv *.png imgs/ > /dev/null 2>&1
 # replace all spaces in imgs folder with underscores
 cd imgs
