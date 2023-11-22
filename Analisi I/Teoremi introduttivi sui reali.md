@@ -15,3 +15,28 @@ vale $|x_1+x_2| \le |x_1|+|x_2|$
 $|x|\le|x|$
 $-|x|\le x \le |x|$
 $-(|x_1|+|x_2|) \le x_1+x_2 \le |x_1|+ |x_2| \to |x_1+x_2| \le |x_1|+|x_2|$
+
+### Principio di induzione
+![placeholder](./imgs/Pasted_image_20231122090741.png)
+
+### Disuguaglianza di Bernoulli
+**Enunciato**: $(1+x)^n \ge 1 + nx$ 
+![placeholder](./imgs/Pasted_image_20231122091500.png)
+
+### Definizione di massimo e minimo
+![placeholder](./imgs/Pasted_image_20231122095004.png)
+---
+![placeholder](./imgs/Pasted_image_20231122095100.png)
+
+### Teorema unicità di massimo e minimo
+![placeholder](./imgs/Pasted_image_20231122095150.png)
+
+### Definizione di maggiorante e minorante
+![placeholder](./imgs/Pasted_image_20231122095536.png)
+
+### Insieme limitato
+![placeholder](./imgs/Pasted_image_20231122100035.png)
+
+### Estremo superiore e inferiore
+![placeholder](./imgs/Pasted_image_20231122100150.png)
+![placeholder](./imgs/Pasted_image_20231122100211.png)

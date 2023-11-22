@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lista argomenti.md",
+                "file": "Teoremi introduttivi sui reali.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lista argomenti.md",
+                "file": "Teoremi introduttivi sui reali.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5
+    "width": 345.5
   },
   "right": {
     "id": "25e10ddff988e2a0",
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lista argomenti.md",
+                "file": "Teoremi introduttivi sui reali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lista argomenti.md",
+                "file": "Teoremi introduttivi sui reali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lista argomenti.md"
+                "file": "Teoremi introduttivi sui reali.md"
               }
             }
           }
@@ -160,19 +160,20 @@
   },
   "active": "59022f678dddb794",
   "lastOpenFiles": [
-    "Teoremi introduttivi sui reali.md",
-    "Tipi di funzioni.md",
+    "imgs/Pasted_image_20231122100211.png",
+    "imgs/Pasted_image_20231122100035.png",
+    "imgs/Pasted_image_20231122100150.png",
     "Lista argomenti.md",
-    "imgs/Pasted_image_20231121175839.png",
-    "imgs/Pasted_image_20231121175804.png",
-    "imgs/Pasted_image_20231121180139.png",
-    "imgs/Pasted_image_20231121175910.png",
-    "imgs/Pasted_image_20231121180200.png",
-    "imgs/Pasted image 20231121180139.png",
-    "imgs/Pasted image 20231121175839.png",
-    "imgs/Pasted image 20231121175804.png",
-    "Pasted image 20231121180200.png",
-    "Pasted image 20231121180139.png",
+    "Teoremi introduttivi sui reali.md",
+    "Pasted image 20231122100211.png",
+    "Pasted image 20231122100150.png",
+    "Pasted image 20231122100035.png",
+    "Tipi di funzioni.md",
+    "imgs/Pasted_image_20231122095004.png",
+    "imgs/Pasted_image_20231122095150.png",
+    "imgs/Pasted_image_20231122090741.png",
+    "imgs/Pasted_image_20231122091500.png",
+    "imgs/Pasted_image_20231122095536.png",
     "imgs",
     "test.txt",
     "latexcheatsheet.pdf",

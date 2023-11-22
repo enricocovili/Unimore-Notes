@@ -12,13 +12,13 @@
 	- potenza, esponenziale, logaritmo ✅
 	- trigonometriche (sin, cos, tan) ✅
 - Disuguaglianza triangolare. DIMOSTRAZIONE ✅
-- Principio di induzione
-- Disuguaglianza di Bernoulli. DIMOSTRAZIONE con induzione
-- Massimo e Minimo
-- Teorema unicità del massimo e minimo. DIMOSTRAZIONE
-- Maggiorante e Minorante
-- Un insieme è limitato se e solo se esiste un M>0 tc |a| <= M per ogni a. DIMOSTRAZIONE
-- Estremo superiore e inferiore
+- Principio di induzione ✅
+- Disuguaglianza di Bernoulli. DIMOSTRAZIONE con induzione ✅
+- Massimo e Minimo ✅
+- Teorema unicità del massimo e minimo. DIMOSTRAZIONE ✅
+- Maggiorante e Minorante ✅
+- Un insieme è limitato se e solo se esiste un M>0 tc |a| <= M per ogni a. DIMOSTRAZIONE 
+- Estremo superiore e inferiore ✅
 - Teorema esistenza estremo superiore. DIMOSTRAZIONE
 ### Successioni
 - Definizione di successione
@@ -128,4 +128,8 @@
 - Formula fondamentale del calcolo integrale. DIMOSTRAZIONE
 - Definizione di integrale indefinito
 - Proprietà dell'integrale indefinito
-- Integrali fondamentali
+- Primitive funzioni elementari
+- Integrazione funzioni razionali
+- Metodi di integrazione
+	- per parti. DIMOSTRAZIONE
+	- per sostituzione. DIMOSTRAZIONE
