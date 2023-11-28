@@ -4,3 +4,7 @@
 ### Dimostrazione della definizione
 ![placeholder](./imgs/Pasted_image_20231121172902.png)
 ![placeholder](./imgs/Pasted_image_20231121173004.png)
+
+### Rappresentazione cartesiana di E3
+Consideriamo 3 punti affinemente indipendenti
+![placeholder](./imgs/rapp_cart_E3.svg)
