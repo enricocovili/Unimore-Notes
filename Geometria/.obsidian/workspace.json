@@ -4,167 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "2ada1764d04d43cf",
+        "id": "1eb82b13860dc728",
         "type": "tabs",
         "children": [
           {
-            "id": "6e6239316bd2982e",
+            "id": "fd3879bf5e5ff230",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spazi vettoriali euclidei.md",
+                "file": "Distanza euclidea.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4e2f58390e407521",
+            "id": "24440bfc398e178c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi Ortonormali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "802c8adb139b43ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Trasformazioni Ortogonali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e7a004d0499c829",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Complemento Ortogonale.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1694939e1f3b76b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Orientazione spazi vettoriali euclidei.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8411aea30eeaf1c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spazi Euclidei.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "46e20fc895c78e10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemi di riferimento.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4111afd5b62bbf9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sottospazi Euclidei.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "788b06a640f1f8cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rappresentazione di sottospazi euclidei.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9bd8c3bcaf0a0b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spazio euclideo E3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f120fe7cecd62e78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Condizioni di Parallelismo.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ba83ac52d8f69f42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mutue posizioni in E3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce77b56646163ed8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spazio euclideo E3.md",
+                "file": "Simplessi.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 12
+        ]
       }
     ],
     "direction": "vertical"
@@ -230,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spazio euclideo E3.md",
+                "file": "Distanza euclidea.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spazio euclideo E3.md",
+                "file": "Distanza euclidea.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spazio euclideo E3.md"
+                "file": "Distanza euclidea.md"
               }
             }
           }
@@ -292,48 +159,48 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "771d5b63ccc8d029",
+  "active": "fd3879bf5e5ff230",
   "lastOpenFiles": [
-    "Determinante di Matrici quadrate.md",
+    "Rappresentazione di sottospazi vettoriali.md",
+    "Distanza euclidea.md",
+    "Simplessi.md",
+    "Pasted image 20231130152225.png",
+    "Pasted image 20231130152101.png",
+    "Pasted image 20231130152035.png",
+    "Pasted image 20231130150725.png",
+    "Pasted image 20231130150510.png",
+    "Pasted image 20231130150502.png",
+    "Pasted image 20231130150306.png",
+    "Pasted image 20231130150220.png",
+    "Spazio euclideo E3.md",
+    "Spazio Euclideo E2.md",
+    "Trasformazioni Lineari.md",
+    "Pasted image 20231130142626.png",
+    "Pasted image 20231130142600.png",
+    "Fasci propri e impropri in E3.md",
+    "Spazi vettoriali euclidei.md",
+    "Basi Ortonormali.md",
+    "Trasformazioni Ortogonali.md",
     "Complemento Ortogonale.md",
     "Orientazione spazi vettoriali euclidei.md",
+    "Spazi Euclidei.md",
+    "Sistemi di riferimento.md",
+    "Sottospazi Euclidei.md",
+    "Rappresentazione di sottospazi euclidei.md",
+    "Condizioni di Parallelismo.md",
     "Mutue posizioni in E3.md",
-    "imgs/Pasted_image_20231128113456.png",
-    "imgs/Pasted_image_20231128103051.png",
-    "imgs/Pasted_image_20231128113106.png",
-    "imgs/Pasted_image_20231128112026.png",
-    "imgs/Pasted_image_20231128110934.png",
-    "imgs/rapp_cart_E3.svg",
-    "imgs/Pasted_image_20231128113435.png",
-    "imgs/Pasted_image_20231128111033.png",
-    "imgs/Pasted_image_20231128104454.png",
-    "imgs/Pasted_image_20231128103111.png",
+    "Geometria_Uni.pdf",
+    "Dipendenza e Indipendenza Lineare.md",
+    "Base-Teorema Spettrale.md",
+    "Determinante di Matrici quadrate.md",
     "Ortogonalità tra sottospazi.md",
     "Geometria_Uni.pdf.part",
-    "Condizioni di Parallelismo.md",
-    "Spazi vettoriali euclidei.md",
-    "Spazio euclideo E3.md",
     "Matrici.md",
     "Polinomio caratteristico.md",
     "Rango di Matrici.md",
-    "Rappresentazione di sottospazi euclidei.md",
-    "Rappresentazione di sottospazi vettoriali.md",
-    "Risoluzione di sistemi lineari.md",
-    "Sistemi Lineari.md",
-    "Sistemi di riferimento.md",
-    "Strutture Algebriche.md",
-    "Sottospazi Euclidei.md",
     "sedwaeRkL",
-    "Spazi Euclidei.md",
-    "Trasformazioni Ortogonali.md",
     "latexcheatsheet.pdf",
-    "Basi Ortonormali.md",
-    "Pasted image 20231114113334.png.md",
-    "Base-Teorema Spettrale.md",
-    "Auto valori-vettori-spazi.md",
-    "Basi e dimensioni.md",
     "Untitled",
-    "Geometria_Uni.pdf",
     "test.sh",
     "sedJLmgYk",
     "imgs/imgs",

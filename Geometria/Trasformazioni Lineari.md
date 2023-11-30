@@ -44,8 +44,6 @@ Quindi bisogna dimostrare che questi $h-n$ vettori sono linearmente indipendenti
 ![placeholder](./imgs/Pasted_image_20231012143746.png)
 Detto con altre parole, una trasformazione lineare esiste e sai come si comporta dopo che hai studiato il suo comportamento sui vettori di una base
 
-#### da mettere esercizi TODO
-
 ### Proposizioni 5.11-12-13
 ![placeholder](./imgs/Pasted_image_20231012145655.png)
 ![placeholder](./imgs/Pasted_image_20231012145711.png)
