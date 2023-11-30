@@ -133,3 +133,5 @@
 - Metodi di integrazione
 	- per parti. DIMOSTRAZIONE
 	- per sostituzione. DIMOSTRAZIONE
+- Integrazione funzioni irrazionali
+- Integrazione funzioni trascendenti con sostituzione
