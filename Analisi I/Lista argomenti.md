@@ -135,3 +135,7 @@
 	- per sostituzione. DIMOSTRAZIONE
 - Integrazione funzioni irrazionali
 - Integrazione funzioni trascendenti con sostituzione
+
+### Aree
+- Circonferenza
+	- Area del cerchio. DIMOSTRAZIONE
