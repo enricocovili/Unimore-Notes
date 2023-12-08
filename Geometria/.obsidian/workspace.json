@@ -4,38 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "51aaa31f9176730a",
+        "id": "8084d63fb8ab1604",
         "type": "tabs",
         "children": [
           {
-            "id": "c1c1fd388160f0a0",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Geometria_Uni.pdf"
-              }
-            }
-          },
-          {
-            "id": "ee3ab57687af58e0",
+            "id": "ea03ae1d88909f30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ampliamento proiettivo.md",
+                "file": "16. Polinomio caratteristico.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ba502495f6679c82",
+            "id": "58ee9e1af634749d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "coniche.md",
+                "file": "10. Cambiamento di base.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8ea88061765a01ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "36. Coniche.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +63,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -71,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "simili",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 393.5
   },
   "right": {
     "id": "c47135321ff9f937",
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coniche.md",
+                "file": "36. Coniche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "coniche.md",
+                "file": "36. Coniche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coniche.md"
+                "file": "36. Coniche.md"
               }
             }
           }
@@ -170,8 +172,36 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "ba502495f6679c82",
+  "active": "771d5b63ccc8d029",
   "lastOpenFiles": [
+    "37. categorie coniche e rette polari.pdf",
+    "46. Coniche 1.md",
+    "imgs/dim-distanza-punto-iperpiano.svg",
+    "34. Ampliamento proiettivo.md",
+    "18. Spazi vettoriali euclidei.md",
+    "21. Complemento Ortogonale.md",
+    "19. Basi Ortonormali.md",
+    "17. Base-Teorema Spettrale.md",
+    "16. Polinomio caratteristico.md",
+    "15. Auto valori-vettori-spazi.md",
+    "14. Rappresentazione di sottospazi vettoriali.md",
+    "12. Sistemi Lineari.md",
+    "6. Basi e dimensioni.md",
+    "11. Matrici simili.md",
+    "10. Cambiamento di base.md",
+    "2. Matrici.md",
+    "9. Rango di Matrici.md",
+    "8. Trasformazioni Lineari.md",
+    "5. Dipendenza e Indipendenza Lineare.md",
+    "4. Spazi Vettoriali.md",
+    "7. Somma e intersezione di sottospazi vettoriali.md",
+    "3. Determinante di Matrici quadrate.md",
+    "1. Strutture Algebriche.md",
+    "36. Coniche.md",
+    "27. Condizioni di Parallelismo.md",
+    "26. Rappresentazione di sottospazi euclidei.md",
+    "13. Risoluzione di sistemi lineari.md",
+    "imgs/tutorato-01-12.png",
     "imgs/Pasted_image_20231204121254.png",
     "imgs/Pasted_image_20231204120134.png",
     "imgs/Pasted_image_20231204122501.png",
@@ -180,44 +210,15 @@
     "imgs/Pasted_image_20231204115611.png",
     "imgs/Pasted_image_20231204122557.png",
     "imgs/Pasted_image_20231204122614.png",
-    "imgs/Pasted_image_20231204120253.png",
-    "imgs/Pasted_image_20231204122419.png",
-    "imgs/Pasted_image_20231204120847.png",
     "categorie_coniche_rette_polari.xopp~",
     "categorie_coniche_rette_polari.xopp",
     "6dec.xopp~",
     "6dec.xopp",
     "Geometria_Uni_temp.xopp~",
     "Geometria_Uni_temp.xopp",
-    "Ampliamento proiettivo.md",
-    "coniche.md",
     "Geometria_Uni.pdf",
-    "Trasformazioni Ortogonali.md",
-    "Basi Ortonormali.md",
-    "Spazi vettoriali euclidei.md",
-    "Sottospazi Euclidei.md",
-    "Orientazione spazi vettoriali euclidei.md",
-    "Simplessi.md",
-    "Ortogonalità tra sottospazi.md",
-    "Mutue posizioni in E3.md",
-    "Condizioni di Parallelismo.md",
-    "Distanza euclidea.md",
-    "Rappresentazione di sottospazi vettoriali.md",
-    "Spazio euclideo E3.md",
-    "Spazio Euclideo E2.md",
-    "Trasformazioni Lineari.md",
-    "Fasci propri e impropri in E3.md",
-    "Complemento Ortogonale.md",
-    "Spazi Euclidei.md",
-    "Sistemi di riferimento.md",
-    "Rappresentazione di sottospazi euclidei.md",
-    "Dipendenza e Indipendenza Lineare.md",
-    "Base-Teorema Spettrale.md",
-    "Determinante di Matrici quadrate.md",
     "Geometria_Uni.pdf.part",
-    "Matrici.md",
     "sedwaeRkL",
-    "latexcheatsheet.pdf",
     "Untitled.canvas"
   ]
 }
