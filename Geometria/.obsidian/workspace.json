@@ -11,11 +11,24 @@
             "id": "44210e0e5af23821",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "39. iperbole-equilatera.pdf"
+              }
+            }
+          },
+          {
+            "id": "85822291022997fe",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "37. categorie coniche e rette polari.pdf"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "37. categorie coniche e rette polari.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "37. categorie coniche e rette polari.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "37. categorie coniche e rette polari.pdf"
+              }
             }
           }
         ]
@@ -139,19 +156,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "44210e0e5af23821",
+  "active": "771d5b63ccc8d029",
   "lastOpenFiles": [
+    "xopp/geo-18-dec.xopp",
+    "xopp/categorie_coniche_rette_polari.xopp",
+    "xopp",
+    "38. Polo e polare.md",
+    "37. categorie coniche e rette polari.pdf",
+    "39. iperbole-equilatera.pdf",
     "esercizi/esercizi.xopp",
     "esercizi/esercizi_18_dec.pdf",
     "esercizi/2_parziale.xopp",
     "esercizi/eser.xopp",
     "esercizi/fuochi_coniche.xopp",
     "esercizi/tutorato_annotated.pdf",
-    "esercizi/tutorato.xopp",
-    "esercizi/assi_vertici_coniche.xopp",
-    "assi_vertici_coniche.xopp",
-    "esercizi",
-    "fuochi_coniche.xopp",
     "Pasted image 20231217111835.png",
     "Pasted image 20231217111808.png",
     "imgs/Pasted_image_20231217111808.png",
@@ -182,7 +200,6 @@
     "12. Sistemi Lineari.md",
     "13. Risoluzione di sistemi lineari.md",
     "17. Base-Teorema Spettrale.md",
-    "46. Coniche 1.md",
     "imgs/dim-distanza-punto-iperpiano.svg",
     "imgs/tutorato-01-12.png",
     "imgs/Pasted_image_20231204121254.png",
