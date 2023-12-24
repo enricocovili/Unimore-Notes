@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8084d63fb8ab1604",
+        "id": "44deb3e9faaddbd8",
         "type": "tabs",
         "children": [
           {
-            "id": "ea03ae1d88909f30",
+            "id": "44210e0e5af23821",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "16. Polinomio caratteristico.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58ee9e1af634749d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10. Cambiamento di base.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8ea88061765a01ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "36. Coniche.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "simili",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 393.5
+    "width": 353.5
   },
   "right": {
     "id": "c47135321ff9f937",
@@ -110,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "36. Coniche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "36. Coniche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "36. Coniche.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -172,53 +139,54 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "771d5b63ccc8d029",
+  "active": "44210e0e5af23821",
   "lastOpenFiles": [
-    "37. categorie coniche e rette polari.pdf",
+    "esercizi/esercizi.xopp",
+    "esercizi/esercizi_18_dec.pdf",
+    "esercizi/2_parziale.xopp",
+    "esercizi/eser.xopp",
+    "esercizi/fuochi_coniche.xopp",
+    "esercizi/tutorato_annotated.pdf",
+    "esercizi/tutorato.xopp",
+    "esercizi/assi_vertici_coniche.xopp",
+    "assi_vertici_coniche.xopp",
+    "esercizi",
+    "fuochi_coniche.xopp",
+    "Pasted image 20231217111835.png",
+    "Pasted image 20231217111808.png",
+    "imgs/Pasted_image_20231217111808.png",
+    "imgs/Pasted_image_20231217111835.png",
+    "imgs/Pasted image 20231217111835.png",
+    "imgs/Pasted image 20231217111808.png",
+    "36. Coniche.md",
+    "32. Mutue posizioni in E3.md",
+    "16. Polinomio caratteristico.md",
+    "31. Spazio Euclideo E2.md",
+    "29. Simplessi.md",
+    "21. Complemento Ortogonale.md",
+    "33. Distanza euclidea.md",
+    "26. Rappresentazione di sottospazi euclidei.md",
+    "19. Basi Ortonormali.md",
+    "10. Cambiamento di base.md",
+    "30. Spazio euclideo E3.md",
+    "08. Trasformazioni Lineari.md",
+    "35. Fasci propri e impropri in E3.md",
+    "27. Condizioni di Parallelismo.md",
+    "28. Ortogonalità tra sottospazi.md",
+    "24. Sistemi di riferimento.md",
+    "25. Sottospazi Euclidei.md",
+    "23. Spazi Euclidei.md",
+    "22. Orientazione spazi vettoriali euclidei.md",
+    "18. Spazi vettoriali euclidei.md",
+    "20. Trasformazioni Ortogonali.md",
+    "12. Sistemi Lineari.md",
+    "13. Risoluzione di sistemi lineari.md",
+    "17. Base-Teorema Spettrale.md",
     "46. Coniche 1.md",
     "imgs/dim-distanza-punto-iperpiano.svg",
-    "34. Ampliamento proiettivo.md",
-    "18. Spazi vettoriali euclidei.md",
-    "21. Complemento Ortogonale.md",
-    "19. Basi Ortonormali.md",
-    "17. Base-Teorema Spettrale.md",
-    "16. Polinomio caratteristico.md",
-    "15. Auto valori-vettori-spazi.md",
-    "14. Rappresentazione di sottospazi vettoriali.md",
-    "12. Sistemi Lineari.md",
-    "6. Basi e dimensioni.md",
-    "11. Matrici simili.md",
-    "10. Cambiamento di base.md",
-    "2. Matrici.md",
-    "9. Rango di Matrici.md",
-    "8. Trasformazioni Lineari.md",
-    "5. Dipendenza e Indipendenza Lineare.md",
-    "4. Spazi Vettoriali.md",
-    "7. Somma e intersezione di sottospazi vettoriali.md",
-    "3. Determinante di Matrici quadrate.md",
-    "1. Strutture Algebriche.md",
-    "36. Coniche.md",
-    "27. Condizioni di Parallelismo.md",
-    "26. Rappresentazione di sottospazi euclidei.md",
-    "13. Risoluzione di sistemi lineari.md",
     "imgs/tutorato-01-12.png",
     "imgs/Pasted_image_20231204121254.png",
     "imgs/Pasted_image_20231204120134.png",
-    "imgs/Pasted_image_20231204122501.png",
-    "imgs/Pasted_image_20231204121500.png",
-    "imgs/Pasted_image_20231204115344.png",
-    "imgs/Pasted_image_20231204115611.png",
-    "imgs/Pasted_image_20231204122557.png",
-    "imgs/Pasted_image_20231204122614.png",
-    "categorie_coniche_rette_polari.xopp~",
-    "categorie_coniche_rette_polari.xopp",
-    "6dec.xopp~",
-    "6dec.xopp",
-    "Geometria_Uni_temp.xopp~",
-    "Geometria_Uni_temp.xopp",
-    "Geometria_Uni.pdf",
-    "Geometria_Uni.pdf.part",
-    "sedwaeRkL",
     "Untitled.canvas"
   ]
 }
