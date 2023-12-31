@@ -8,27 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "44210e0e5af23821",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "39. iperbole-equilatera.pdf"
-              }
-            }
-          },
-          {
             "id": "85822291022997fe",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "37. categorie coniche e rette polari.pdf"
+                "file": "11. Matrici simili.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 394.5110321044922
   },
   "right": {
     "id": "c47135321ff9f937",
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "37. categorie coniche e rette polari.pdf",
+                "file": "11. Matrici simili.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "37. categorie coniche e rette polari.pdf",
+                "file": "11. Matrici simili.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "37. categorie coniche e rette polari.pdf"
+                "file": "11. Matrici simili.md"
               }
             }
           }
@@ -156,26 +147,46 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "771d5b63ccc8d029",
+  "active": "85822291022997fe",
   "lastOpenFiles": [
+    "imgs/Pasted_image_20231231161757.png",
+    "imgs/Pasted_image_20231231161703.png",
+    "imgs/Pasted_image_20231231161732.png",
+    "imgs/Pasted_image_20231231161748.png",
+    "Pasted image 20231231161757.png",
+    "Pasted image 20231231161748.png",
+    "10. Cambiamento di base.md",
+    "Pasted image 20231231161732.png",
+    "09. Rango di Matrici.md",
+    "Pasted image 20231231161703.png",
+    "12. Sistemi Lineari.md",
+    "14. Rappresentazione di sottospazi vettoriali.md",
+    "13. Risoluzione di sistemi lineari.md",
+    "15. Auto valori-vettori-spazi.md",
+    "11. Matrici simili.md",
+    "08. Trasformazioni Lineari.md",
+    "07. Somma e intersezione di sottospazi vettoriali.md",
+    "06. Basi e dimensioni.md",
+    "05. Dipendenza e Indipendenza Lineare.md",
+    "04. Spazi Vettoriali.md",
+    "03. Determinante di Matrici quadrate.md",
+    "4. Spazi Vettoriali.md",
+    "01. Strutture Algebriche.md",
+    "02. Matrici.md",
+    "39. iperbole-equilatera.pdf",
     "xopp/geo-18-dec.xopp",
     "xopp/categorie_coniche_rette_polari.xopp",
     "xopp",
     "38. Polo e polare.md",
     "37. categorie coniche e rette polari.pdf",
-    "39. iperbole-equilatera.pdf",
     "esercizi/esercizi.xopp",
     "esercizi/esercizi_18_dec.pdf",
     "esercizi/2_parziale.xopp",
     "esercizi/eser.xopp",
     "esercizi/fuochi_coniche.xopp",
-    "esercizi/tutorato_annotated.pdf",
     "Pasted image 20231217111835.png",
     "Pasted image 20231217111808.png",
     "imgs/Pasted_image_20231217111808.png",
-    "imgs/Pasted_image_20231217111835.png",
-    "imgs/Pasted image 20231217111835.png",
-    "imgs/Pasted image 20231217111808.png",
     "36. Coniche.md",
     "32. Mutue posizioni in E3.md",
     "16. Polinomio caratteristico.md",
@@ -184,26 +195,6 @@
     "21. Complemento Ortogonale.md",
     "33. Distanza euclidea.md",
     "26. Rappresentazione di sottospazi euclidei.md",
-    "19. Basi Ortonormali.md",
-    "10. Cambiamento di base.md",
-    "30. Spazio euclideo E3.md",
-    "08. Trasformazioni Lineari.md",
-    "35. Fasci propri e impropri in E3.md",
-    "27. Condizioni di Parallelismo.md",
-    "28. Ortogonalità tra sottospazi.md",
-    "24. Sistemi di riferimento.md",
-    "25. Sottospazi Euclidei.md",
-    "23. Spazi Euclidei.md",
-    "22. Orientazione spazi vettoriali euclidei.md",
-    "18. Spazi vettoriali euclidei.md",
-    "20. Trasformazioni Ortogonali.md",
-    "12. Sistemi Lineari.md",
-    "13. Risoluzione di sistemi lineari.md",
-    "17. Base-Teorema Spettrale.md",
-    "imgs/dim-distanza-punto-iperpiano.svg",
-    "imgs/tutorato-01-12.png",
-    "imgs/Pasted_image_20231204121254.png",
-    "imgs/Pasted_image_20231204120134.png",
     "Untitled.canvas"
   ]
 }
