@@ -1,4 +1,4 @@
-### Assioma di completezza
+[]()### Assioma di completezza
 ![placeholder](./imgs/Pasted_image_20231121174326.png)
 ![placeholder](./imgs/Pasted_image_20231121174252.png)
 

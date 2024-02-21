@@ -8,14 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "85822291022997fe",
+            "id": "a71c82a9e5320073",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "11. Matrici simili.md",
-                "mode": "source",
-                "source": false
+                "file": "37. categorie coniche e rette polari.pdf"
               }
             }
           }
@@ -48,7 +46,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "norma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "11. Matrici simili.md",
+                "file": "37. categorie coniche e rette polari.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "11. Matrici simili.md",
+                "file": "37. categorie coniche e rette polari.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "11. Matrici simili.md"
+                "file": "37. categorie coniche e rette polari.pdf"
               }
             }
           }
@@ -147,54 +145,53 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "85822291022997fe",
+  "active": "a71c82a9e5320073",
   "lastOpenFiles": [
+    "38. assi vertici asintoti coniche.pdf",
+    "37. categorie coniche e rette polari.pdf",
+    "17. Base-Teorema Spettrale.md",
+    "16. Polinomio caratteristico.md",
+    "15. Auto valori-vettori-spazi.md",
+    "18. Spazi vettoriali euclidei.md",
+    "19. Basi Ortonormali.md",
+    "21. Complemento Ortogonale.md",
+    "20. Trasformazioni Ortogonali.md",
+    "14. Rappresentazione di sottospazi vettoriali.md",
+    "13. Risoluzione di sistemi lineari.md",
+    "25. Sottospazi Euclidei.md",
+    "22. Orientazione spazi vettoriali euclidei.md",
+    "03. Determinante di Matrici quadrate.md",
+    "04. Spazi Vettoriali.md",
+    "06. Basi e dimensioni.md",
+    "05. Dipendenza e Indipendenza Lineare.md",
+    "07. Somma e intersezione di sottospazi vettoriali.md",
+    "10. Cambiamento di base.md",
+    "09. Rango di Matrici.md",
+    "11. Matrici simili.md",
+    "08. Trasformazioni Lineari.md",
+    "01. Strutture Algebriche.md",
+    "12. Sistemi Lineari.md",
+    "40. iperbole-equilatera.pdf",
+    "39. Equazione canonica, fuochi.md",
+    "36. Coniche.md",
+    "35. Fasci propri e impropri in E3.md",
+    "lista_dimostrazioni_GEOMETRIA_Ing-Inf (2023-2024) - lista_dimostrazioni_GEOMETRIA_Ing-Inf (2023-2024).pdf",
+    "esercizi/assi_vertici_asintoti_coniche.xopp",
     "imgs/Pasted_image_20231231161757.png",
     "imgs/Pasted_image_20231231161703.png",
     "imgs/Pasted_image_20231231161732.png",
     "imgs/Pasted_image_20231231161748.png",
     "Pasted image 20231231161757.png",
     "Pasted image 20231231161748.png",
-    "10. Cambiamento di base.md",
     "Pasted image 20231231161732.png",
-    "09. Rango di Matrici.md",
     "Pasted image 20231231161703.png",
-    "12. Sistemi Lineari.md",
-    "14. Rappresentazione di sottospazi vettoriali.md",
-    "13. Risoluzione di sistemi lineari.md",
-    "15. Auto valori-vettori-spazi.md",
-    "11. Matrici simili.md",
-    "08. Trasformazioni Lineari.md",
-    "07. Somma e intersezione di sottospazi vettoriali.md",
-    "06. Basi e dimensioni.md",
-    "05. Dipendenza e Indipendenza Lineare.md",
-    "04. Spazi Vettoriali.md",
-    "03. Determinante di Matrici quadrate.md",
-    "4. Spazi Vettoriali.md",
-    "01. Strutture Algebriche.md",
-    "02. Matrici.md",
-    "39. iperbole-equilatera.pdf",
     "xopp/geo-18-dec.xopp",
     "xopp/categorie_coniche_rette_polari.xopp",
     "xopp",
-    "38. Polo e polare.md",
-    "37. categorie coniche e rette polari.pdf",
     "esercizi/esercizi.xopp",
     "esercizi/esercizi_18_dec.pdf",
-    "esercizi/2_parziale.xopp",
-    "esercizi/eser.xopp",
-    "esercizi/fuochi_coniche.xopp",
     "Pasted image 20231217111835.png",
     "Pasted image 20231217111808.png",
-    "imgs/Pasted_image_20231217111808.png",
-    "36. Coniche.md",
-    "32. Mutue posizioni in E3.md",
-    "16. Polinomio caratteristico.md",
-    "31. Spazio Euclideo E2.md",
-    "29. Simplessi.md",
-    "21. Complemento Ortogonale.md",
-    "33. Distanza euclidea.md",
-    "26. Rappresentazione di sottospazi euclidei.md",
     "Untitled.canvas"
   ]
 }

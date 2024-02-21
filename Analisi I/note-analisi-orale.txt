@@ -1,0 +1,5 @@
+Unicità limite succ. convergenti    -> E = |l1-l2|/2
+Ogni succ limitata è anche conv     -> E = 1
+Permanenza del segno                -> E = a/2
+limite notevole sin(x)/x            -> E = pi/2
+definizione limite funz.            -> delta = 1/n
