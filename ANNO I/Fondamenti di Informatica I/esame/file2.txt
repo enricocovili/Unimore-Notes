@@ -1,0 +1,3 @@
+Prova di testo con un po' di spazi e qualche
+a capo. In teoria, non dovrebbero più
+esserci spazi dopo il comando.

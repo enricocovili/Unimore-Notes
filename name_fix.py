@@ -1,3 +1,5 @@
+# script that renames all files to two figure numbers (ex: 1.Introduction -> 01.Introduction)
+
 import os
 
 # Set the path to the directory containing your files
