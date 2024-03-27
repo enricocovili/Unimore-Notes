@@ -6,13 +6,12 @@
 void SubsetKRec(int n, int k, int i, bool vcurr[], int *nsol, int count) {
   if (count == k) {
     (*nsol)++;
-    printf("{ ");
     for (int j = 0; j < i; j++) {
       if (vcurr[j] == 1) {
         printf("%d,", j);
       }
     }
-    printf(" } - ");
+    printf("\n");
     return;
   }
   if (i == n) {
