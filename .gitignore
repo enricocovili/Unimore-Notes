@@ -1,3 +1,4 @@
 *.xopp
 **/hidden/
 **/.vscode/
+**/test.c
