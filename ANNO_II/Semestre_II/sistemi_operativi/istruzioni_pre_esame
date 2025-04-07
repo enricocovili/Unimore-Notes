@@ -1,0 +1,5 @@
+PER LA PROVA PRE ESAME BISOGNA:
+-andare su OLJ, aprire il PROCTOR a schermo intero.
+-aprite la VPN, andare su Linux, aprire un terminale e inserire il comando curl dato su moodle per connettersi alla VPN
+-rispondete alle domande da terminale (nome cognome id posto e id gruppo) -> viene creata una cartella su /Scrivania.
+Aggiungete FCP.sh, FCR.sh (con commentato qualcosa). (Al ritroso chiudete PROCTOR, uscite dal comando curl, chiudete VPN)
