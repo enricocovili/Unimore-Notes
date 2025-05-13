@@ -15,7 +15,6 @@ case $1 in
         exit 2;;
 esac
 
-
 C=$1 # salviamo il numero positivo nella variabile della consegna
 # shiftiamo per avere solo le gerarchie in $*
 shift

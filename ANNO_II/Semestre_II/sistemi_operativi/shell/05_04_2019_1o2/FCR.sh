@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # File comandi ricorsivo
-# $0 = nome del file comandi, $1 = , $2 = , $3 =
+# $0 = nome del file comandi, $1 = dir corrente, $2 = F (nome file semplice), $3 = Nome file temporaneo
 cd $1
 
 #la variabile NR ci serve per il numero di linee
@@ -13,10 +13,10 @@ do
 	if test -f $F -a -r $F
 	then
 		NR=`wc -l < $F`
-		if test $NR -eq $2	# se il numero di linee e' esattamente uguale a $2
+		if test $NR -ge 4 -a $F = $2	# se il numero di linee e' >= 4 e il nome del file è F
 		then
-			# trovato un file che soddisfa le specifiche e quindi inseriamo il suo nome assoluto nel file temporaneo
-			echo `pwd`/$F >> $3
+			# trovato un file che soddisfa le specifiche e quindi inseriamo il suo nome assoluto nel file temporaneo insieme al numero righe
+			echo `pwd`/$F $NR >> $3
 		fi
 	fi
 done
