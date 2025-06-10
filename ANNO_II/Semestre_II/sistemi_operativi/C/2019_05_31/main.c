@@ -1,5 +1,30 @@
 /*
-
+Con un editor, scrivere un programma in C 31Mag19.c che risolva la seconda prova
+in itinere del 31 Maggio 2019 che si riporta qui di seguito per comodità: N.B.
+Sul sito si trovano in totale 4 testi per questa prova; quello riportato nel
+seguito è la versione 1 dei turni 1 e 2. La parte in C accetta un numero
+variabile N di parametri maggiore o uguale a 3 (da controllare) che
+rappresentano nomi assoluti di file F1...FN. Il processo padre deve generare N
+processi figli: i processi figli Pi sono associati agli N file Fh (con h = i+1).
+Ognuno di tali figli deve creare a sua volta un processo nipote PPi: ogni
+processo nipote PPi esegue concorrentemente e deve ordinare il file Fh secondo
+il normale ordine alfabetico, senza differenziare maiuscole e minuscole, usando
+in modo opportuno il comando sort di UNIX/Linux. Ogni processo figlio Pi deve
+ricevere solo la PRIMA linea inviata dal suo processo nipote PPi e deve inviare
+al processo padre una struttura dati, che deve contenere tre campi: 1) c1, di
+tipo int, che deve contenere il PID del nipote; 2) c2, di tipo int, che deve
+contenere la lunghezza della linea compreso il terminatore di linea; 3) c3, di
+tipo char[250]*, che deve contenere la linea corrente ricevuta dal nipote. Il
+padre deve ricevere, rispettando l'ordine dei file, le singole strutture inviate
+dai figli e deve stampare su standard output, per ogni struttura ricevuta,
+ognuno dei campi insieme al nome del file cui le informazioni si riferiscono: si
+faccia attenzione al fatto che è demandato al padre il compito di trasformare,
+in una stringa, la linea ricevuta nel campo c3 di ogni struttura! Al termine,
+ogni processo figlio Pi deve ritornare al padre la lunghezza della linea inviata
+al padre, ma non compreso il terminatore di linea e il padre deve stampare su
+standard output il PID di ogni figlio e il valore ritornato.
+* Ogni linea si può supporre che abbia una lunghezza massima di 250 caratteri,
+compreso il terminatore di linea e il terminatore di stringa.
 */
 
 #include <fcntl.h>
@@ -12,7 +37,17 @@
 
 typedef int pipe_t[2];
 
-int main(int argc, char **argv) {
+/* definizione del TIPO Strut per le singole strutture dati, che verranno
+ * inviate sulle pipe da parte dei figli al padre */
+typedef struct
+{
+  int pid_nipote;        /* campo c1 del testo */
+  int lung_linea;        /* campo c2 del testo */
+  char linea_letta[250]; /* campo c3 del testo */
+} Strut;
+
+int main(int argc, char **argv)
+{
   /* -------- Variabili locali ---------- */
   int pid; /* process identifier per le fork() del padre e del figlio */
   int N;   /* numero passato sulla riga di comando, che saranno il numero di
@@ -25,56 +60,38 @@ int main(int argc, char **argv) {
                     complessivamente saranno N pipe una per ogni coppia */
   int n, j;      /* indici per i cicli */
   /* n nome indicato nel testo */
-  int outfile;      /* fd per creazione file da parte del padre */
   char buffer[250]; /* array di caratteri usato sia dal figlio per la sprintf e
                        sia dal padre per ricevere dai figli */
   /* nome indicato dal testo */
   int ritorno; /* variabile che viene ritornata da ogni figlio al padre */
-               /* ------------------------------------ */
+  Strut S;     /* Strut di comunicazione tra figlio e padre */
+  /* ------------------------------------ */
 
   /* Controllo sul numero di parametri: STRETTO! */
-  if (argc < 3) /* Ci vogliono almeno due parametri */
+  if (argc <= 3) /* Ci vogliono solo due parametri */
   {
     printf(
         "Errore nel numero dei parametri dato che argc = %d, mentre ci "
-        "vogliono almeno due parametri\n",
+        "vogliono almeno 3 parametri\n",
         argc);
     exit(1);
   }
 
-  /* Calcoliamo il numero passato corrispondente al primo parametro e facciamo
-   * il controllo che sia strettamente positivo */
-  N = atoi(argv[1]); /* usiamo la funzione di libreria atoi: se si riesce a
-                        convertire in un numero strettamente positivo lo
-                        consideriamo un controllo sufficiente */
-  if (N <= 0) {
-    printf(
-        "Errore: Il primo parametro %s non e' un numero strettamente maggiore "
-        "di 0\n",
-        argv[1]);
-    exit(2);
-  }
-
-  /* Per prima cosa il processo padre deve creare un file con il nome passato
-   * come secondo parametro */
-  if ((outfile = creat(argv[2], PERM)) < 0)
-  /* ERRORE se non si riesce a creare il file */
-  {
-    printf("Errore nella creazione file per %s dato che outfile = %d\n",
-           argv[2], outfile);
-    exit(3);
-  }
+  N = argc - 1; // numero processi (e file)
 
   /* Allocazione dell'array di N pipe descriptors */
   piped = (pipe_t *)malloc(N * sizeof(pipe_t));
-  if (piped == NULL) {
+  if (piped == NULL)
+  {
     printf("Errore nella allocazione della memoria\n");
     exit(4);
   }
 
   /* Creazione delle N pipe figli-padre */
-  for (n = 0; n < N; n++) {
-    if (pipe(piped[n]) < 0) {
+  for (n = 0; n < N; n++)
+  {
+    if (pipe(piped[n]) < 0)
+    {
       printf("Errore nella creazione della pipe figli-padre per l'indice %d\n",
              n);
       exit(5);
@@ -85,13 +102,16 @@ int main(int argc, char **argv) {
    * dei figli che poi creeranno un nipote */
 
   /* Ciclo di generazione dei figli */
-  for (n = 0; n < N; n++) {
-    if ((pid = fork()) < 0) {
+  for (n = 0; n < N; n++)
+  {
+    if ((pid = fork()) < 0)
+    {
       printf("Errore nella fork di indice %d\n", n);
       exit(6);
     }
 
-    if (pid == 0) {
+    if (pid == 0)
+    {
       /* codice del figlio */
       /* in caso di errori nei figli o nei nipoti decidiamo di tornare -1 che
        * corrispondera' al valore 255 che non puo' essere un valore accettabile
@@ -99,13 +119,16 @@ int main(int argc, char **argv) {
 
       /* Chiusura delle pipe non usate nella comunicazione con il padre */
       /* ogni figlio scrive solo su piped[n] */
-      for (j = 0; j < N; j++) {
+      for (j = 0; j < N; j++)
+      {
         close(piped[j][0]);
-        if (n != j) close(piped[j][1]);
+        if (n != j)
+          close(piped[j][1]);
       }
 
       /* prima creiamo la pipe di comunicazione fra figlio e nipote */
-      if (pipe(p) < 0) {
+      if (pipe(p) < 0)
+      {
         printf(
             "Errore nella creazione della pipe figlio-nipote per l'indice %d\n",
             n);
@@ -117,7 +140,8 @@ int main(int argc, char **argv) {
         printf("Errore nella fork di creazione del nipote\n");
         exit(-1); /* si veda commento precedente */
       }
-      if (pid == 0) {
+      if (pid == 0)
+      {
         /* codice del nipote */
         /* in caso di errori nei figli o nei nipoti decidiamo di tornare -1 che
          * corrispondera' al valore 255 che non puo' essere un valore
@@ -138,31 +162,24 @@ int main(int argc, char **argv) {
         close(p[0]);
         close(p[1]);
 
+        close(2);
+
         /* Il nipote diventa il comando ps: bisogna usare le versioni dell'exec
          * con la p in fondo in modo da usare la variabile di ambiente PATH  */
-        execlp("ps", "ps", (char *)0);
+        execlp("sort", "sort", "-f", argv[n + 1], (char *)0);
 
         /* Non si dovrebbe mai tornare qui!!*/
         /* usiamo perror che scrive su standard error, dato che lo standard
          * output e' collegato alla pipe */
-        perror("Problemi di esecuzione del ps da parte del nipote");
+        perror("Problemi di esecuzione del sort da parte del nipote");
         exit(-1); /* si veda commento precedente */
       }
-      /* ogni figlio per prima cosa deve calcolare la stringa corrispondente al
-       * pid del nipote o al suo pid o a quello del padre (a seconda delle
-       * combinazioni dei testi): le combinazioni non previste in questa
-       * soluzione vengono riportate in commento */
-      sprintf(buffer, "%d", pid); /* PID nipote */
-      /* sprintf(buffer, "%d", getpid()); PROPRIO PID */
-      /* sprintf(buffer, "%d", getppid()); PID DEL PADRE: NOTA IN QUESTO CASO LE
-       * LINEE INDIVIDUATE DA TUTTI I FIGLI SARANNO LA STESSA LINEA! */
+      /* codice figlio */
 
       /* ogni figlio deve simulare il piping dei comandi nei confronti del
        * nipote e poi nei confronti del padre: */
       /* quindi prima deve chiudere lo standard input e quindi usare la dup sul
        * lato di lettura della pipe p */
-      close(0);
-      dup(p[0]);
       /* quindi dopo deve chiudere lo standard output e quindi usare la dup sul
        * lato di scrittura della pipe piped[n] */
       close(1);
@@ -174,52 +191,82 @@ int main(int argc, char **argv) {
       close(p[1]);
       close(piped[n][1]);
 
-      /* ogni figlio diventa il comando-filtro grep: bisogna usare le versioni
-       * dell'exec con la p in fondo in modo da usare la variabile di ambiente
-       * PATH  */
-      execlp("grep", "grep", buffer, (char *)0);
+      S.pid_nipote = getpid();
+      j = 0;
+      while (read(piped[n][0], &(S.linea_letta[j]), 1))
+      {
+        if (buffer[j] == '\n')
+        { // finita prima linea
+          S.lung_linea = j - 1;
+          break;
+        }
+        j++; /* incrementiamo l'indice della linea */
+      }
 
-      /* Non si dovrebbe mai tornare qui!!*/
-      /* usiamo perror che scrive su standard error, dato che lo standard output
-       * e' collegato alla pipe */
-      perror("Problemi di esecuzione del grep da parte del figlio");
-      exit(-1); /* si veda commento precedente */
+      write(piped[n][1], &S, sizeof(S));
+
+      /* il figlio deve aspettare il nipote non solo per correttezza ma per
+       * evitare che il nipote riceva il segnale SIGPIPE dato che il figlio
+       * legge solo la PRIMA linea */
+      ritorno = -1; /* si veda commento precedente */
+      pid = wait(&status);
+      if (pid < 0)
+        printf("Errore in wait\n");
+      if ((status & 0xFF) != 0)
+        printf("Nipote con pid %d terminato in modo anomalo\n", pid);
+      else
+      {
+        /* questa stampa non e' richiesta dal testo */
+        /* printf("DEBUG-Il nipote con pid=%d ha ritornato %d\n", pid,
+         * (int)((status >> 8) & 0xFF)); */
+        /* il figlio ritorna la lunghezza della linea inviata NON compreso il
+         * terminatore (se fosse compreso il terminatore il valore di lung_linea
+         * NON andrebbe decrementato) */
+        ritorno = S.lung_linea - 1;
+      }
+
+      exit(ritorno);
     }
   }
 
   /* Codice del padre */
   /* Il padre chiude i lati delle pipe che non usa */
-  for (n = 0; n < N; n++) close(piped[n][1]);
+  for (n = 0; n < N; n++)
+    close(piped[n][1]);
 
   /* Il padre recupera le informazioni dai figli: in ordine di indice */
-  for (n = 0; n < N; n++) {
+  for (n = 0; n < N; n++)
+  {
     j = 0; /* inizializziamo l'indice della linea per la singola linea inviata
               da ogni figlio */
     /* per ogni figlio si devono leggere le informazioni che il figlio con la
      * grep ha scritto sul suo standard output che corrisponde al lato di
      * scrittura della pipe piped[n]; il padre legge, a questo punto, dal lato
      * di lettura di questa pipe */
-    while (read(piped[n][0], &(buffer[j]), 1)) {
+    while (read(piped[n][0], &(buffer[j]), 1))
+    {
       /* dato che arriva una sola linea leggiamo tutti i caratteri dalla pipe */
       j++; /* incrementiamo l'indice della linea */
     }
     /* scriviamo sul file, creato precedentemente, il numero di caratteri
      * corretti e quindi anche con il terminatore di linea! N.B. Il valore di j
      * e' stato incrementato e quindi e' giusto! */
-    write(outfile, buffer, j);
   }
 
   /* Il padre aspetta i figli */
-  for (n = 0; n < N; n++) {
+  for (n = 0; n < N; n++)
+  {
     pid = wait(&status);
-    if (pid < 0) {
+    if (pid < 0)
+    {
       printf("Errore in wait\n");
       exit(7);
     }
 
     if ((status & 0xFF) != 0)
       printf("Figlio con pid %d terminato in modo anomalo\n", pid);
-    else {
+    else
+    {
       ritorno = (int)((status >> 8) & 0xFF);
       if (ritorno != 0)
         printf(

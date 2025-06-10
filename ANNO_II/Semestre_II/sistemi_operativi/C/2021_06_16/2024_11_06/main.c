@@ -1,5 +1,45 @@
 /*
+TESTO PARTE C: ATTENZIONE LEGGERE ANCHE LA NOTA SEGUENTE AL TESTO!
+La parte in C accetta un numero variabile di parametri N maggiore o uguale a 3
+che rappresentano: il primo il nome assoluto di una directory e gli altri nomi
+relativi semplici di file (F1, …FN); si consideri l’OSS. a). Il processo padre
+deve, per prima cosa, creare nella directory di sistema /tmp un file con nome
+RISULTATO, se non esiste, altrimenti deve aprire tale file in append e scrivere
+-in una linea separata- il nome assoluto della directory passata come primo
+parametro. Quindi, il processo padre deve generare N processi figli: i processi
+figli Pn sono associati ad uno dei file F1, ... FN (in ordine).; ogni processo
+figlio Pn deve creare a sua volta un processo nipote PPn; i processi figli e
+nipoti eseguono concorrentemente. Il compito di ogni processo nipote PPn è
+quello di ricavare l’elenco dei file/directory della directory corrente,
+considerando tutte le informazioni associate ai file/directory compreso
+l’informazione del loro i-number, usando in modo opportuno il comando ls di
+UNIX/Linux. Ogni processo figlio Pn, a sua volta, deve -filtrando quanto
+ricevuto dal proprio nipote PPn - selezionare la linea del comando ls che
+corrisponde al nome del proprio file associato, usando in modo opportuno il
+comando-filtro grep di UNIX/Linux. Tale linea selezionata deve, contestualmente,
+essere inviata al padre. Il padre deve ricevere, rispettando l'ordine dei figli,
+ogni singola linea inviata dai figli; al termine della lettura di ogni singola
+linea, il padre deve scrivere tale linea (insieme con il terminatore di linea)
+sul file indicato precedentemente. Al termine, ogni processo figlio Pn torna al
+padre il risultato del comando-filtro grep eseguito e il padre deve stampare su
+standard output il PID di ogni figlio e il valore ritornato. Si inserisca un
+opportuno controllo nel caso questo valore non rappresenti il valore di successo
+del comando-filtro grep!
 
+NOTA BENE NEL FILE C main.c SI USI OBBLIGATORIAMENTE:
+- una variabile di nome N per il numero di file;
+- una variabile di nome outfile per il file descriptor usato dal padre per la
+creazione/apertura del file RISULTATO;
+- una variabile di nome n per l’indice dei processi figli;
+- una variabile di nome linea per l’array di 250 caratteri usato per leggere, da
+parte del padre, via via le singole linee inviate dai figli; si supponga che 250
+caratteri siano sufficienti per ogni linea, compreso il terminatore di linea.
+OSSERVAZIONE: Ogni coppia costituita da un nipote e da un figlio realizza un
+piping di comandi, che sono quelli indicati nel testo. Rispetto ad un semplice
+piping di due comandi, in più ogni figlio si deve comportare in modo analogo al
+proprio nipote per quanto riguarda lo standard output, ma per mandare le
+informazioni al padre che agisce a livello di programmazione recuperando in modo
+opportuno quanto scritto da ogni figlio!
 */
 
 #include <fcntl.h>
@@ -25,45 +65,37 @@ int main(int argc, char **argv) {
                     complessivamente saranno N pipe una per ogni coppia */
   int n, j;      /* indici per i cicli */
   /* n nome indicato nel testo */
-  int outfile;      /* fd per creazione file da parte del padre */
-  char buffer[250]; /* array di caratteri usato sia dal figlio per la sprintf e
+  int outfile;     /* fd per creazione file da parte del padre */
+  char linea[250]; /* array di caratteri usato sia dal figlio per la sprintf e
                        sia dal padre per ricevere dai figli */
   /* nome indicato dal testo */
   int ritorno; /* variabile che viene ritornata da ogni figlio al padre */
                /* ------------------------------------ */
 
   /* Controllo sul numero di parametri: STRETTO! */
-  if (argc < 3) /* Ci vogliono almeno due parametri */
+  if (argc < 4) /* Ci vogliono almeno tre parametri */
   {
     printf(
         "Errore nel numero dei parametri dato che argc = %d, mentre ci "
-        "vogliono almeno due parametri\n",
+        "vogliono almeno tre parametri\n",
         argc);
     exit(1);
   }
 
-  /* Calcoliamo il numero passato corrispondente al primo parametro e facciamo
-   * il controllo che sia strettamente positivo */
-  N = atoi(argv[1]); /* usiamo la funzione di libreria atoi: se si riesce a
-                        convertire in un numero strettamente positivo lo
-                        consideriamo un controllo sufficiente */
-  if (N <= 0) {
-    printf(
-        "Errore: Il primo parametro %s non e' un numero strettamente maggiore "
-        "di 0\n",
-        argv[1]);
+  /* Per prima cosa il processo padre deve creare un file con il nome passato
+   * come secondo parametro */
+  if ((outfile = open("/tmp/RISULTATO", O_WRONLY | O_APPEND | O_CREAT, PERM)) <
+      0)
+  /* ERRORE se non si riesce a creare il file */
+  {
+    printf("Errore nella creazione file temporaneo\n");
     exit(2);
   }
 
-  /* Per prima cosa il processo padre deve creare un file con il nome passato
-   * come secondo parametro */
-  if ((outfile = creat(argv[2], PERM)) < 0)
-  /* ERRORE se non si riesce a creare il file */
-  {
-    printf("Errore nella creazione file per %s dato che outfile = %d\n",
-           argv[2], outfile);
-    exit(3);
-  }
+  write(outfile, argv[1], strlen(argv[1])); /* scrittura nuova linea */
+  write(outfile, "\n", 1);
+
+  N = argc - 2; /* numero file */
 
   /* Allocazione dell'array di N pipe descriptors */
   piped = (pipe_t *)malloc(N * sizeof(pipe_t));
@@ -140,22 +172,14 @@ int main(int argc, char **argv) {
 
         /* Il nipote diventa il comando ps: bisogna usare le versioni dell'exec
          * con la p in fondo in modo da usare la variabile di ambiente PATH  */
-        execlp("ps", "ps", (char *)0);
+        execlp("ls", "ls", "-li", (char *)0);
 
         /* Non si dovrebbe mai tornare qui!!*/
         /* usiamo perror che scrive su standard error, dato che lo standard
          * output e' collegato alla pipe */
-        perror("Problemi di esecuzione del ps da parte del nipote");
+        perror("Problemi di esecuzione di ls da parte del nipote");
         exit(-1); /* si veda commento precedente */
       }
-      /* ogni figlio per prima cosa deve calcolare la stringa corrispondente al
-       * pid del nipote o al suo pid o a quello del padre (a seconda delle
-       * combinazioni dei testi): le combinazioni non previste in questa
-       * soluzione vengono riportate in commento */
-      sprintf(buffer, "%d", pid); /* PID nipote */
-      /* sprintf(buffer, "%d", getpid()); PROPRIO PID */
-      /* sprintf(buffer, "%d", getppid()); PID DEL PADRE: NOTA IN QUESTO CASO LE
-       * LINEE INDIVIDUATE DA TUTTI I FIGLI SARANNO LA STESSA LINEA! */
 
       /* ogni figlio deve simulare il piping dei comandi nei confronti del
        * nipote e poi nei confronti del padre: */
@@ -177,7 +201,7 @@ int main(int argc, char **argv) {
       /* ogni figlio diventa il comando-filtro grep: bisogna usare le versioni
        * dell'exec con la p in fondo in modo da usare la variabile di ambiente
        * PATH  */
-      execlp("grep", "grep", buffer, (char *)0);
+      execlp("grep", "grep", argv[n + 2], (char *)0);
 
       /* Non si dovrebbe mai tornare qui!!*/
       /* usiamo perror che scrive su standard error, dato che lo standard output
@@ -199,14 +223,14 @@ int main(int argc, char **argv) {
      * grep ha scritto sul suo standard output che corrisponde al lato di
      * scrittura della pipe piped[n]; il padre legge, a questo punto, dal lato
      * di lettura di questa pipe */
-    while (read(piped[n][0], &(buffer[j]), 1)) {
+    while (read(piped[n][0], &(linea[j]), 1)) {
       /* dato che arriva una sola linea leggiamo tutti i caratteri dalla pipe */
       j++; /* incrementiamo l'indice della linea */
     }
     /* scriviamo sul file, creato precedentemente, il numero di caratteri
      * corretti e quindi anche con il terminatore di linea! N.B. Il valore di j
      * e' stato incrementato e quindi e' giusto! */
-    write(outfile, buffer, j);
+    write(outfile, linea, j);
   }
 
   /* Il padre aspetta i figli */

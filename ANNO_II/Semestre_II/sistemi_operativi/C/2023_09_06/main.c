@@ -11,6 +11,10 @@
 #define PERM 0644 /* in ottale per diritti UNIX */
 
 typedef int pipe_t[2];
+typedef struct {
+  long int min_righe; /* valore minimo di righe */
+  int n;              /* indice d'ordine del processo */
+} data;
 
 int main(int argc, char **argv) {
   /* -------- Variabili locali ---------- */
@@ -18,15 +22,13 @@ int main(int argc, char **argv) {
   int N;   /* numero passato sulla riga di comando, che saranno il numero di
               processi figli e quindi nipoti da creare */
   /* nome indicato nel testo */
-  int status;    /* variabile di stato per la wait */
-  pipe_t *piped; /* array dinamico di pipe descriptors per comunicazioni
-                    figli-padre  */
-  pipe_t p;      /* una sola pipe per ogni coppia figlio-nipote: chiaramente
-                    complessivamente saranno N pipe una per ogni coppia */
-  int n, j;      /* indici per i cicli */
+  int status;       /* variabile di stato per la wait */
+  pipe_t *pipes_pf; /* array dinamico di pipe descriptors per comunicazioni
+                    padre-figli  */
+  pipe_t *pipef_ff; /* figli-figli */
+  int i, j;         /* indici per i cicli */
   /* n nome indicato nel testo */
-  int outfile;      /* fd per creazione file da parte del padre */
-  char buffer[250]; /* array di caratteri usato sia dal figlio per la sprintf e
+  char linea[250]; /* array di caratteri usato sia dal figlio per la sprintf e
                        sia dal padre per ricevere dai figli */
   /* nome indicato dal testo */
   int ritorno; /* variabile che viene ritornata da ogni figlio al padre */
@@ -40,29 +42,6 @@ int main(int argc, char **argv) {
         "vogliono almeno due parametri\n",
         argc);
     exit(1);
-  }
-
-  /* Calcoliamo il numero passato corrispondente al primo parametro e facciamo
-   * il controllo che sia strettamente positivo */
-  N = atoi(argv[1]); /* usiamo la funzione di libreria atoi: se si riesce a
-                        convertire in un numero strettamente positivo lo
-                        consideriamo un controllo sufficiente */
-  if (N <= 0) {
-    printf(
-        "Errore: Il primo parametro %s non e' un numero strettamente maggiore "
-        "di 0\n",
-        argv[1]);
-    exit(2);
-  }
-
-  /* Per prima cosa il processo padre deve creare un file con il nome passato
-   * come secondo parametro */
-  if ((outfile = creat(argv[2], PERM)) < 0)
-  /* ERRORE se non si riesce a creare il file */
-  {
-    printf("Errore nella creazione file per %s dato che outfile = %d\n",
-           argv[2], outfile);
-    exit(3);
   }
 
   /* Allocazione dell'array di N pipe descriptors */
@@ -148,6 +127,7 @@ int main(int argc, char **argv) {
         perror("Problemi di esecuzione del ps da parte del nipote");
         exit(-1); /* si veda commento precedente */
       }
+      /* codice figlio */
       /* ogni figlio per prima cosa deve calcolare la stringa corrispondente al
        * pid del nipote o al suo pid o a quello del padre (a seconda delle
        * combinazioni dei testi): le combinazioni non previste in questa
