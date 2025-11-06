@@ -10,7 +10,7 @@ public class Simulator {
             int rand = (int) (Math.random() * 3);
             switch (rand) {
                 case 0:
-                    commandList.add(new Command(new CampanaTic(new CampanaDin())));
+                    commandList.add(new Command(new CampanaTic(new BellAdapter(new CampanaUSA()))));
                     break;
                 case 1:
                     commandList.add(new Command(new CampanaEco(new CampanaDon())));
@@ -26,6 +26,8 @@ public class Simulator {
         for (Command cmd : commandList) {
             cmd.execute();
         }
+
+
 
     }
 }
