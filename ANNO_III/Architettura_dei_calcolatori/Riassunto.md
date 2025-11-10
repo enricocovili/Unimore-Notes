@@ -43,7 +43,8 @@ L’architettura del calcolatore definisce genericamente l’hardware, i suoi co
 
 Le funzioni che si possono ottenere con una sintesi hardware sono le stesse ottenibili in software e viceversa, con un diverso rapporto tra prestazioni e flessibilità.
 # Entropia
-![placeholder](./imgs/Pasted_image_20251103162054.png)
+Informazione: ![placeholder](./imgs/Pasted_image_20251103162054.png)
+Entropia: ![placeholder](./imgs/Pasted_image_20251106113004.png)
 dove B è la base (numero degli elementi)
 # Prestazioni
 Tcpu= Ncc\*Tck == Tcpu = Ncc / f (Ncc = Number of clock cycles)
@@ -106,8 +107,8 @@ Un **implicante** è un prodotto logico (termine AND) di una o più variabili ch
 
 **Esempio (Karnaugh 3 variabili):**
 Se `F = Σm(1,3,5,7)`:
-- Implicanti primi: `X′Y`, `XZ`
-- Implicante essenziale: `XZ` (se copre un 1 unico)
+- Implicanti primi: `Z`
+- Implicante essenziale: `Z`
 
 ---
 #### Mintermini
