@@ -825,20 +825,38 @@ Cache L2 e memoria centrale erano esterno.
 Ora, coi sistemi multi core, le cache sono distribuite con la L3 condivisa.
 
 ## Tipi di cache associative
-- **Fully associative**
-	Quella vista fino ad ora
-- **N-way associative**
-	
-	Clusterizzo le Linee in Set = L / N-way. Indirizzo i cluster con Log2(S).
-	Diventa fully associative dentro il set e direct mapped fuori.
-	In questo modo trovo un bilancio di prestazioni e hardware (ho un numero S di comparatori)
-- **Direct mapped**
-	Non sovrascrivere a caso: c'è un'indicizzazione.
-	Organizzo i dati in cache in modo che siano ordinabili tramite una funzione di hash.
-	Contiene dei bit di index per indirizzare, che sono Log2(L) (categorizzo per Linea).
-	L'hit rate è più alto perché è meno general purpose, ma è più lenta causa categorizzazione.
-	Si mettono i bit di index come i meno significativi prima dell'offsett per una questione di intervalli (vengono spalmati meglio sulla cache).
 
+**Ottime immagini che descrivono l'accesso in memoria sono nel pdf "memorie 1" su moodle**. Non le ho inserite per tenere un po' più pulito qui.
+
+- **Fully associative**
+	● È la cache descritta precedentemente con piazzamento completamente associativo ossia senza vincoli sull’indice in cui la linea può essere piazzata 
+	● È quella con maggiore grado di libertà, in quanto la linea che viene scritta a partire dal livello di gerarchia più basso può essere piazzata in una qualsiasi linea presente. 
+	● L’indirizzo è quindi composto da: ○ una parte di offset di NB=log2B bit (dove B è la dimensione del blocco) ○ una parte di tag da NT= na-log2B bit, che vengono usati per essere associati a tutte le linee della cache. 
+	● Questa architettura è la più efficiente, ha mediamente la miss rate più bassa ma è anche la più costosa per il costo della logica di controllo dei tag. 
+	● È inoltre la più costosa anche per decidere la politica di rimpiazzamento nel caso di cache piena.
+    
+- **N-way associative**
+	● È la cache più usata, ed è un compromesso tra le architetture precedenti. 
+	● Le linee della cache sono divise in S set da n vie ognuna (n-way associative). 
+	● Ogni linea del livello inferiore della gerarchia può essere piazzata in un solo set ma in una qualsiasi delle n linee dentro al set. 
+	● È una cache quindi direct mapped a livello di set ma totalmente associativa dentro al set; perciò il miss rate è minore rispetto al caso precedente perchè ci sono più possibilità di mantenere la linea nella cache senza doverla rimpiazzare. 
+	● L’indirizzo è composto da: ○ una parte di offset di NB=log2B bit ( B dimensione del blocco) ○ una parte di index di Ni= log2S (con S=L/n il numero di set) ○ da NT= na-Ni-NB bit di Tag che vengono usati per essere associati al tag memorizzato all’interno.
+	
+- **Direct mapped**
+	La cache direct mapped prevede una sola possibilità di piazzamento per ogni linea. In questo senso è l’estremo opposto della fully associative
+	● Ogni linea infatti usa una parte del tag come chiave unica di indice. Ogni linea se è presente sulla cache può risiedere in una sola posizione data dalla parte di indirizzo chiamata index e quindi la associazione del tag avviene con un confronto 1:1 e non 1:L come nel caso precedente. 
+	● La parte di index è la parte meno significativa del tag. In questo modo due blocchi adiacenti vengono mappati in due linee consecutive e non si sovrappongono. 
+	● L’indirizzo è quindi composto da: ○ una parte di offset di NB=log2B bit (B dimensione del blocco) ○ una parte di index di Ni= log2L (con L il numero di linee) ○ e da NT= na-Ni-NB bit di Tag che vengono usati per essere associati al tag memorizzato all’interno. 
+	● È la cache potenzialmente con il più alto miss rate ma è anche la meno costosa. ● Di fatto l’index fa da indirizzo per indirizzare solo quella linea sia della cache directory che della cache ram che può contenere il dato.
+
+## Tipi di Miss
+
+### Compulsory
+esse si verificano quando la linea richiesta non è mai stata in cache. 
+### Conflict
+se sono dovute a un conflitto dovute alla limitata associatività: il dato viene richiesto nella cache, sarebbe stato presente ma è stato rimpiazzato perché unìaltra linea con lo stesso index è stata richiesta in seguito e a causa della limitata associatività ha preso il suo posto. 
+### Capacity
+se sono dovute alla limitata capacità della cache: la linea sarebbe stata presente ma essendo la cache di capacità limitata essa è stata rimpiazzata da un’altra.
 ## Prestazioni
 Blocco: unità di informazione minima scambiata fra livelli (es: 32 bytes) 
 **Hit**: un accesso alla memoria che trova l'informazione cercata nel livello superiore. 
@@ -876,37 +894,174 @@ Gestiscono come i dati modificati vengono aggiornati dalla cache alla RAM.
 * La copia nella RAM avviene solo **dopo**, quando quel blocco "sporco" deve essere rimosso dalla cache.
 * **Vantaggio:** Molto veloce, le scritture avvengono alla velocità della cache.
 * **Svantaggio:** Più complesso e la RAM non è immediatamente aggiornata. (incoerenza)
-## Memoria Virtuale
+
+## Coerenza delle cache
+### MESI (snoopy bus)
+Unico punto di serializzazione e ogni core osserva gli altri: se c'è un errore viene invalidato il dato nelle cache.
+
+Ci sono 4 stati:
+- **Modified**: avvenuta modifica della cache
+- **Exclusive**: specifica la concordanza con una cache di livello inferire (nel verso della memoria centrale)
+- **Shared**: la linea è condivisa ma mai modificata; essenziale nel caso di processi multipli
+- **Invalid**: linea non valida
+
+Modified e Exclusive sono **single owner**, solo un core può modificare. Passare a shared è un *downgrade*, il contrario è un *upgrade*.
+![[Pasted image 20251124115237.png]]
+### Directry based
+C'è un controllore centralizzato per gli accessi, che sono atomici.
+# Memoria Virtuale
 
 La **Memoria Virtuale** è una tecnica che permette al sistema operativo di usare il disco rigido (o SSD) come se fosse un'estensione della RAM.
 
 Questo crea l'illusione che il sistema disponga di molta più memoria (memoria *virtuale*) di quella fisicamente installata (memoria *fisica*).
 
----
+Caratteristica ancora più importante è il fatto che la memoria virtuale supporta la condivisione della memoria principale tra più processi attivi simultaneamente, in modo protetto.
 
-### Concetti Chiave
+![placeholder](./imgs/Pasted_image_20251121115942.png)
 
-* **Paging (Paginazione):** La memoria (sia virtuale che fisica) viene divisa in blocchi di dimensione fissa chiamati **pagine** (es. 4KB).
+Durante l'address translation vengono anche applicati i principi di protezione.
 
-* **Area di Swap (o File di Paging):** È la porzione di disco usata come "RAM lenta" per memorizzare le pagine che non entrano nella RAM fisica.
+![placeholder](./imgs/Pasted_image_20251121120222.png)
 
-* **Page Table (Tabella delle Pagine):** È la "mappa" fondamentale. È una struttura dati (una per ogni processo) che traduce gli **indirizzi virtuali** usati dal programma negli **indirizzi fisici** reali della RAM.
+### Meccanismo di accesso
+Il meccanismo della memoria virtuale vede la memoria centrale come una cache della memoria di massa
+I blocchi sono le pagine La memoria centrale è fully associative
+Il meccanismo di rimpiazzamento è LRU
+l’accesso però non avviene in modo associativo, ma con accesso diretto tramite TRADUZIONE.
+Se la pagina non c’è (miss) si ha un page fault e viene chiamato il Sistema operativo per caricare una nuova pagina dell’hard disk
 
-* **MMU (Memory Management Unit):** È l'hardware (nella CPU) che legge la Page Table ed esegue la traduzione degli indirizzi velocemente.
+### Page table
+E' la tabella che contiene le traslazioni tra indirizzi virtuali e fisici. 
+Nel indirizzo virtuale c'è anche un bit VALID per indicare se la pagina è presente in memoria.
+L’indirizzo virtuale se non è nella PT deve essere usato per andare in memoria di massa, ed è necessario tenere traccia di dove si trova ogni pagina virtuale. 
+Per questo il SO riserva uno spazio in Memoria di massa per tutte le pagine del processo in uno spazio chiamato spazio di **SWAP** deve poi avere uno spazio (separato dalla PT o unito) in cui si tiene le informazioni di dove si trovano le pagine sulla memoria fisica.
 
----
+#### Tabelle multilivello
+In RISC V è presente un meccanismo di indirizzamento con tabelle a più livelli: il concetto è simile alle cache n-way associative.
+![placeholder](./imgs/Pasted_image_20251121121357.png)
 
-### Funzionamento (Page Fault)
+### Page Fault
 
-1.  Un programma cerca di accedere a un indirizzo di memoria (virtuale).
 2.  La MMU controlla la Page Table.
-3.  **Se la pagina è in RAM:** La traduzione avviene e il programma continua.
-4.  **Se la pagina NON è in RAM (ma è sul disco):** Si verifica un **Page Fault**.
-5.  Il Sistema Operativo interviene:
+3.  Un programma cerca di accedere a un indirizzo di memoria (virtuale).
+4.  **Se la pagina è in RAM:** La traduzione avviene e il programma continua.
+5.  **Se la pagina NON è in RAM (ma è sul disco):** Si verifica un **Page Fault**.
+6.  Il Sistema Operativo interviene:
     * Sospende il programma.
     * Cerca la pagina sul disco (nell'area di swap).
     * La carica in RAM (se la RAM è piena, "butta fuori" un'altra pagina, salvandola su disco: *swapping*).
     * Aggiorna la Page Table.
     * Fa ripartire il programma.
 
-**Vantaggi:** Permette il multitasking (più processi in esecuzione) e l'esecuzione di programmi più grandi della RAM, proteggendo gli spazi di memoria tra un processo e l'altro.
+Il processo è estremamente lento: le pagine devono essere **grandi** e la memoria è completamente associativa per ridurre i miss. La gestione del page fault e sw per poter applicare algoritmi intelligenti e complessi per l'allocazione. La scrittura è sempre in write back, essendo la meno dispendiosa.
+
+### Migliori performance
+#### TLB
+La Translation Lookaside Buffer è una piccola cache che contiene le entries della page table usate recentemente ed è direttamente nel processore (o nel memory controller).
+![placeholder](./imgs/Pasted_image_20251121121948.png)
+
+#### Come funziona
+##### HIT
+La pagina era in memoria: 
+- si effettua la traduzione (da VPN a PPN, che sarebbe da indirizzo virtuale a fisico)
+- si imposta il bit di utilizzo a 1
+- se c'è una scrittura, anche il dirty bit è a 1
+
+##### MISS
+Se la pagina è presente nella memoria principale, allora la miss del TLB indica solamente che **manca la traduzione**. 
+In tal caso, il processore può gestire la miss del TLB caricando dalla tabella delle pagine (dell’ultimo livello) nel TLB la traduzione dell’indirizzo virtuale, per poi ripetere l’accesso al TLB.
+
+Se invece la pagina non si trova nella memoria principale, allora la miss del TLB indica che si è verificato un vero e proprio page fault. In questo caso, il processore richiede l’intervento del sistema operativo, sollevando un’eccezione. Dato che il TLB contiene molti meno elementi rispetto al numero di pagine della memoria principale, le miss del TLB saranno molto più frequenti dei page fault effettivi.
+In caso di pagefault reale i dati vengono scritti anche nella L3 condivisa e in L2 e L1 (write through)
+
+![[Pasted image 20251124112402.png]]
+
+#### Tabella riassuntiva
+![[Pasted image 20251124113642.png]]
+
+#### Altre architetture
+Quando si legge prima il TLB e la tabella delle pagine e poi la cache,si dice che la cache è physically indexed e physically tagged. 
+In caso contrario, se prima si usa la cache allora si parla di virtually addressed cache. 
+Questo è più efficiente (perchè si va prima in cache) ma potrebbe creare dei problemi di aliasing perchè la stessa pagina potrebbe avere indirizzi virtuali diversi e messa in cache a due indirizzi diversi.
+Il meglio di entrambi gli approcci si raggiunge usando il **virtually indexed e physically tagged**.
+![placeholder](./imgs/Pasted_image_20251121172228.png)
+
+# Parallelismo
+
+Possibile tramite
+- Numero di transistor enorme
+- Capacità di replicazione hardware a basso costo
+- Middleware e Sistemi Operativi per sfruttare l'hw
+
+**Vantaggi**:
+- **speed-up**
+- **scale-up** (problema più grande ma tempo costante)
+	- scalabilità **forte**: incremento di velocità, mantenendo fissa la dimensione del problema e aumentando l’hardware
+	- scalabilità **debole**: ’incremento di velocità quando le dimensioni del problema 
+	- crescono proporzionalmente alla crescita dell’HW
+
+L'unità di base è il **thread**.
+## HPC
+High performance Computing
+Si raggiunge aumentando il throughput, quindi aumentando la capacità di parallelizzare task, oppure tramite la riduzione del tempo di esecuzione. In entrambi i casi si segue la legge di Hamdal per uno speedup.
+
+### HPC vs HTC
+
+|**Caratteristica**|**High-Performance Computing (HPC)**|**High-Throughput Computing (HTC)**|
+|---|---|---|
+|**Obiettivo Principale**|**Velocità** di completamento di un singolo (o pochi) compito/i.|**Quantità** di compiti completati in un lungo periodo.|
+|**Durata del Compito**|**Breve** (ore o giorni). Richiede grande potenza **subito**.|**Lunga** (mesi o anni). Richiede capacità elevata in modo **continuo**.|
+|**Misura di Prestazione**|**FLOPS** (operazioni in virgola mobile al secondo).|Operazioni **al mese o all'anno** (tasso di completamento dei processi).|
+|**Focus**|La **rapidità** con cui il lavoro viene completato.|Quanti **processi** possono essere completati in un lungo periodo di tempo.|
+
+## Tipi di parallelismo
+
+### Pipelining (temporale)
+Insieme di unità utilizzate in sequenza per realizzare una computazione
+![[Pasted image 20251124130951.png]]
+### Replicazione (spaziale)
+Insieme di unità replicate e usate allo stesso tempo per singola o diverse computazioni
+![[Pasted image 20251124130957.png]]
+
+**Disponibile**: nel programma/algoritmo
+**Utilizzato**: utilizzato durante l'esecuzione, il reale parallelismo.
+
+**Funzionale**: costruisco il mio algoritmo per fare in modo che sia parallelizzabile.
+**Dei dati**: strutturo i dati per fare in modo che il programma possa lavorare indipendentemente e allo stesso tempo su diverse parti di essi.
+
+## Classificazione di Flynn
+
+![[Pasted image 20251124131642.png]]
+Esempio SIMD: istruzioni speciali per somme di più registri in parallelo
+
+![[Pasted image 20251124131648.png]]
+
+### SIMD
+#### Vettoriali
+Unità specifiche per elaborare dati vettoriali
+#### Associative o Neuronali
+Elaborano dati in parallelo sul modello del neurone, senza istruzioni specifiche
+#### Pure
+#### Sistoliche
+Capaci di propagare il flusso ai processori successivi, disposti in array o forme esagonali. 
+Ora poco utilizzate.
+
+![[Pasted image 20251124132657.png]]
+
+### MIDM
+
+#### Multiprocessori (shared memory architecture)
+Replicazione di processori e di moduli di memoria condivisa con un global address space. Sono anche dette Shared -memory MIMD architectures perché lo spazio di memoria è condiviso tra tutti.
+Comunicano tramite variabili condivise e meccanismi di sincronizzazione.
+![[Pasted image 20251124133434.png]]
+
+#### Multi-computer (distributed memory architecture) 
+Replicazione di PE (processing elements), come coppia processore/memoria.
+**Distributed-memory MIMD architectures** perché la memoria è distribuita e privata di ogni processore.
+**Message-passing MIMD architectures** perché la comunicazione avviene con scambi di messaggi
+Spesso ques'ultima usa SPMD (Single Program Multiple Data), in cui di fatto i diversi processori eseguono lo stesso programma su dati diversi, ma permettendo un flusso di istruzioni diverso.
+
+![[Pasted image 20251124133712.png]]
+
+## Tabella riassuntiva
+![[Pasted image 20251124133823.png]]
