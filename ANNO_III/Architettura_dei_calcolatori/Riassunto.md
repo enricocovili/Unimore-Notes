@@ -906,7 +906,7 @@ Ci sono 4 stati:
 - **Invalid**: linea non valida
 
 Modified e Exclusive sono **single owner**, solo un core può modificare. Passare a shared è un *downgrade*, il contrario è un *upgrade*.
-![[Pasted image 20251124115237.png]]
+![placeholder](./imgs/Pasted_image_20251124115237.png)
 ### Directry based
 C'è un controllore centralizzato per gli accessi, che sono atomici.
 # Memoria Virtuale
@@ -974,10 +974,10 @@ In tal caso, il processore può gestire la miss del TLB caricando dalla tabella 
 Se invece la pagina non si trova nella memoria principale, allora la miss del TLB indica che si è verificato un vero e proprio page fault. In questo caso, il processore richiede l’intervento del sistema operativo, sollevando un’eccezione. Dato che il TLB contiene molti meno elementi rispetto al numero di pagine della memoria principale, le miss del TLB saranno molto più frequenti dei page fault effettivi.
 In caso di pagefault reale i dati vengono scritti anche nella L3 condivisa e in L2 e L1 (write through)
 
-![[Pasted image 20251124112402.png]]
+![placeholder](./imgs/Pasted_image_20251124112402.png)
 
 #### Tabella riassuntiva
-![[Pasted image 20251124113642.png]]
+![placeholder](./imgs/Pasted_image_20251124113642.png)
 
 #### Altre architetture
 Quando si legge prima il TLB e la tabella delle pagine e poi la cache,si dice che la cache è physically indexed e physically tagged. 
@@ -1018,10 +1018,10 @@ Si raggiunge aumentando il throughput, quindi aumentando la capacità di paralle
 
 ### Pipelining (temporale)
 Insieme di unità utilizzate in sequenza per realizzare una computazione
-![[Pasted image 20251124130951.png]]
+![placeholder](./imgs/Pasted_image_20251124130951.png)
 ### Replicazione (spaziale)
 Insieme di unità replicate e usate allo stesso tempo per singola o diverse computazioni
-![[Pasted image 20251124130957.png]]
+![placeholder](./imgs/Pasted_image_20251124130957.png)
 
 **Disponibile**: nel programma/algoritmo
 **Utilizzato**: utilizzato durante l'esecuzione, il reale parallelismo.
@@ -1031,10 +1031,10 @@ Insieme di unità replicate e usate allo stesso tempo per singola o diverse comp
 
 ## Classificazione di Flynn
 
-![[Pasted image 20251124131642.png]]
+![placeholder](./imgs/Pasted_image_20251124131642.png)
 Esempio SIMD: istruzioni speciali per somme di più registri in parallelo
 
-![[Pasted image 20251124131648.png]]
+![placeholder](./imgs/Pasted_image_20251124131648.png)
 
 ### SIMD
 #### Vettoriali
@@ -1046,14 +1046,14 @@ Elaborano dati in parallelo sul modello del neurone, senza istruzioni specifiche
 Capaci di propagare il flusso ai processori successivi, disposti in array o forme esagonali. 
 Ora poco utilizzate.
 
-![[Pasted image 20251124132657.png]]
+![placeholder](./imgs/Pasted_image_20251124132657.png)
 
 ### MIDM
 
 #### Multiprocessori (shared memory architecture)
 Replicazione di processori e di moduli di memoria condivisa con un global address space. Sono anche dette Shared -memory MIMD architectures perché lo spazio di memoria è condiviso tra tutti.
 Comunicano tramite variabili condivise e meccanismi di sincronizzazione.
-![[Pasted image 20251124133434.png]]
+![placeholder](./imgs/Pasted_image_20251124133434.png)
 
 #### Multi-computer (distributed memory architecture) 
 Replicazione di PE (processing elements), come coppia processore/memoria.
@@ -1061,7 +1061,7 @@ Replicazione di PE (processing elements), come coppia processore/memoria.
 **Message-passing MIMD architectures** perché la comunicazione avviene con scambi di messaggi
 Spesso ques'ultima usa SPMD (Single Program Multiple Data), in cui di fatto i diversi processori eseguono lo stesso programma su dati diversi, ma permettendo un flusso di istruzioni diverso.
 
-![[Pasted image 20251124133712.png]]
+![placeholder](./imgs/Pasted_image_20251124133712.png)
 
 ## Tabella riassuntiva
-![[Pasted image 20251124133823.png]]
+![placeholder](./imgs/Pasted_image_20251124133823.png)
