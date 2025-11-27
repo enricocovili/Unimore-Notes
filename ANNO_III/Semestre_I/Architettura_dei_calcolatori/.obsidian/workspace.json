@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Riassunto.md",
+                "file": "Codici di controllo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Riassunto"
+              "title": "Codici di controllo"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
@@ -171,6 +172,7 @@
   },
   "active": "04145254f6be997f",
   "lastOpenFiles": [
+    "Riassunto.md",
     "imgs/Pasted_image_20251127105200.png",
     "imgs/Pasted_image_20251125113020.png",
     "imgs/Pasted_image_20251127105027.png",
@@ -181,8 +183,6 @@
     "imgs/Pasted image 20251127105917.png",
     "imgs/Pasted image 20251127105200.png",
     "imgs/Pasted image 20251127105041.png",
-    "imgs/Pasted image 20251127105027.png",
-    "Riassunto.md",
     "sedVPctj8",
     "Untitled.md",
     "hidden/Riassunto.pdf",
