@@ -1063,5 +1063,118 @@ Spesso ques'ultima usa SPMD (Single Program Multiple Data), in cui di fatto i di
 
 ![placeholder](./imgs/Pasted_image_20251124133712.png)
 
-## Tabella riassuntiva
+
+### UMA e NUMA
+
+**Unified Memory Access**: ogni processore ha lo stesso tempo di accesso in memoria. La memoria ha relazione simmetrica con i core quindi sono anche **Symmetric Multiprocessor**.
+
+NUMA: il tempo di accesso non è costante: dipende dalla posizione del dato.
+### Multiple Issue
+Questo tipo di architettura permette di far iniziare più istruzioni in contemporanea.
+#### Super pipeline
+In ogni stadio molte operazioni sono eseguite in porzioni del clock differenti. Più operazioni partono assieme per permettere un CPI<1.
+
+#### VLIW
+Per alcune operazioni vengono eseguite più operazioni in contemporanea. 
+E' una scelta definita nell'ISA e realizzata dal compilatore.
+Solitamente sono operazioni SIMD.
+
+![placeholder](./imgs/Pasted_image_20251125113020.png)
+*Con un solo fetch di istruzione il compilatore esegue più istruzioni*
+
+I core VLIW sono **Static Multiple Issue**: deciso dal compilatore staticamente. 
+Il parallelismo ottenuto è l' **Issue Width**, il numero di istruzioni che possono essere compilare assieme in un'unica istruzione del linguaggio macchina.
+
+#### Super Scalare
+Architetture multi-core.  (acquisisce più istruzioni tramite il pre-fetch)
+La scelta di istruzioni che vengono eseguite viene effettuata a runtime.
+E' necessario avere accortezze sulla sincronizzazione per evitare alee di dati.
+![placeholder](./imgs/Pasted_image_20251125115219.png)
+##### Esempio: Pentium 1993
+Pipeline U (tutte le istruzioni, compreso il *microcodice*), e Pipeline V (solo istruzioni semplici).
+La scelta della pipeline avviene durante il decode (runtime). La superscalarità è di 2.
+Durante il write-back si sincronizzavano sui registri (che sono costruiti per supportare doppie scritture contemporanee).
+
+*microcodice* = istruzioni complesse tradotte in RISC per ridurre l'hw.
+
+#### Esecuzione speculativa
+Alcuni blocchi di codice vengono pre-eseguiti per evitare gli stalli a tutti i costi, anche se potrebbero essere porzioni di istruzioni che non sono necessarie (es: una branch in cui non si entra).
+Il compilatore staticamente cambia l'ordine delle istruzioni per raggiungere questo obiettivo. 
+I risultati sono inseriti in *scratch registers* che vengono copiati se il blocco doveva essere effettivamente eseguito. La tabella esecutiva per tenere traccia è la *scoreboard*.
+Avviene quindi un *renaming* tramite la **Register Alias Table**, per evitare la modifica dei veri registri e delle WAW e WAR. E' usata per evitare il tempo di attesa di un registro utilizzato da un'altra operazione parallela.
+
+#### Esecuzione fuori ordine
+Ogni blocco può essere eseguito in ordine diverso rispetto a compilatore/programmatore.
+Due requisiti:
+- in-order issue (dati prelevati in order)
+- in-order commit (dati riscritti in ordine)
+
+### Architetture nel tempo
+#### Esempio: Pentium II (super scalare)
+##### Front end
+- Front end (fetch e decode)
+- Execution Core (le istruzioni senza vincoli vanno nella reservation station, che alimenta le pipeline)
+	- RAT
+	- le istruzioni vanno in un reorder buffer
+	- si hanno le cache "non bloccanti": le istruzioni attendono nel ROB mentre altre vengono eseguite
+
+#### Esempio: Pentium IV
+Limite a 4Ghz per problemi di consumo e calore, anche se era stato progettato per 10. 
+Pipeline molto lunghe che risentivano molto di branch prediction sbagliate. 
+
+#### Progetto Core
+Con il primo processore Intel Core la frequenza si abbassa, come i consumi. 
+Le prestazioni però aumentano grazie a un miglior sfruttamento del parallelismo.
+##### Core 2
+**Wide dynamic execution**: aumenta la superscalarità del singolo core (4 way) 
+Si **accorcia la lunghezza della pipeline** (14 stadi vs 31 del Pentium IV)
+**Macro Fusion**: unisce assieme più istruzioni
+
+### Core i7
+... non necessari
+### Tabella riassuntiva
 ![placeholder](./imgs/Pasted_image_20251124133823.png)
+
+# Interruzione
+
+Sospensione forzata del processo di esecuzione e trasferimento di controllo ad una "*routine di servizio*“ che soddisfa le richieste dell'evento che ha provocato l'interruzione, al termine della quale il controllo viene restituito al processo sospeso
+
+*RRI* (routine di risposta all'interrupt)
+
+**Sincrona**
+- processo sistema operativo
+- debugging
+- page fault
+**Asincrona**
+- periferiche (mouse, tastiera, touchpad...)
+	- di tipo hardware
+
+### Polling
+
+1. La CPU verifica lo stato della periferica (leggendo in locazioni di I/O corrispondenti a registri di stato) 
+2. Continua la richiesta fino a che non verifica che è pronta per ricevere dati in uscita ( o fornire dati in ingresso) 
+3. Inizia il trasferimento dati (in scrittura verso la periferica o in lettura) 
+4. Ricomincia se necessario
+![placeholder](./imgs/Pasted_image_20251127105027.png)
+
+### Ad interruzione
+![placeholder](./imgs/Pasted_image_20251127105041.png)
+![placeholder](./imgs/Pasted_image_20251127105200.png)
+![placeholder](./imgs/Pasted_image_20251127104742.png)
+
+## Exceptions
+
+### Processor-detected exception
+Si verifica durante l'esecuzione del codice, sono provocate dal software indirettamente
+
+### Programmed exceptions
+Sollevate dal codice in maniera esplicita
+
+- **Faults**: correggibile, l'istruzione si riesegue
+	Scrittura in memoria senza privilegi, riscontate prima di aumentare il PC
+- **Traps**: per debug, non vengono rieseguite
+- **Aborts**: hardware failure
+#### Esempi
+![placeholder](./imgs/Pasted_image_20251127105917.png)
+
+

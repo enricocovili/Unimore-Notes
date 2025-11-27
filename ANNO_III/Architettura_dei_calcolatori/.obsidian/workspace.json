@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4f0576725b6b11f3",
+        "id": "7d1572665d56b98c",
         "type": "tabs",
         "children": [
           {
-            "id": "7c1947bc4f45c870",
+            "id": "04145254f6be997f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 380.5026054382324
   },
   "right": {
     "id": "01ddaf63117aeac2",
@@ -169,21 +169,22 @@
       "bases:Create new base": false
     }
   },
-  "active": "7c1947bc4f45c870",
+  "active": "04145254f6be997f",
   "lastOpenFiles": [
-    "sedVPctj8",
-    "imgs/Pasted_image_20251124133712.png",
-    "imgs/Pasted_image_20251124113642.png",
-    "imgs/Pasted_image_20251124133434.png",
-    "imgs/Pasted_image_20251124130957.png",
-    "imgs/Pasted_image_20251124131648.png",
-    "imgs/Pasted_image_20251124130951.png",
-    "imgs/Pasted_image_20251124112402.png",
-    "imgs/Pasted_image_20251124131642.png",
-    "imgs/Pasted_image_20251124132657.png",
-    "imgs/Pasted_image_20251124115237.png",
-    "Untitled.md",
+    "imgs/Pasted_image_20251127105200.png",
+    "imgs/Pasted_image_20251125113020.png",
+    "imgs/Pasted_image_20251127105027.png",
+    "imgs/Pasted_image_20251127105041.png",
+    "imgs/Pasted_image_20251127105917.png",
+    "imgs/Pasted_image_20251125115219.png",
+    "imgs/Pasted_image_20251127104742.png",
+    "imgs/Pasted image 20251127105917.png",
+    "imgs/Pasted image 20251127105200.png",
+    "imgs/Pasted image 20251127105041.png",
+    "imgs/Pasted image 20251127105027.png",
     "Riassunto.md",
+    "sedVPctj8",
+    "Untitled.md",
     "hidden/Riassunto.pdf",
     "hidden",
     "Codici di controllo.md",
@@ -203,7 +204,6 @@
     "esercizi/reverse_string.s",
     "Excalidraw/Drawing 2025-10-20 13.20.54.excalidraw.md",
     "Excalidraw/Drawing 2025-10-20 12.50.03.excalidraw.md",
-    "Excalidraw",
     "Drawing 2025-10-14 11.47.35.excalidraw.md",
     "Untitled.canvas",
     "2025-10-14.md"
