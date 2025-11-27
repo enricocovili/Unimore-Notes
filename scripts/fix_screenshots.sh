@@ -1,7 +1,8 @@
 #!/bin/bash
 
-ROOT_DIR=$(pwd)
+ROOT_DIR=$(git rev-parse --show-toplevel)
 echo "executing $0 at $ROOT_DIR"
+cd "$ROOT_DIR"
 
 find . -type d | while IFS= read -r d
 do

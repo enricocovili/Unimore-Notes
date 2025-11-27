@@ -1155,6 +1155,7 @@ Sospensione forzata del processo di esecuzione e trasferimento di controllo ad u
 2. Continua la richiesta fino a che non verifica che è pronta per ricevere dati in uscita ( o fornire dati in ingresso) 
 3. Inizia il trasferimento dati (in scrittura verso la periferica o in lettura) 
 4. Ricomincia se necessario
+
 ![placeholder](./imgs/Pasted_image_20251127105027.png)
 
 ### Ad interruzione
