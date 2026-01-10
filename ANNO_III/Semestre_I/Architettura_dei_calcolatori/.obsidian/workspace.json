@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Codici di controllo.md",
+                "file": "Riassunto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Codici di controllo"
+              "title": "Riassunto"
             }
           }
         ]
@@ -172,6 +172,8 @@
   },
   "active": "04145254f6be997f",
   "lastOpenFiles": [
+    "hidden/Esercizi slide.pdf",
+    "Codici di controllo.md",
     "Riassunto.md",
     "imgs/Pasted_image_20251127105200.png",
     "imgs/Pasted_image_20251125113020.png",
@@ -187,7 +189,6 @@
     "Untitled.md",
     "hidden/Riassunto.pdf",
     "hidden",
-    "Codici di controllo.md",
     "sedRTK0qW",
     "imgs",
     "Architettura delle memorie.md",

@@ -854,7 +854,7 @@ Ora, coi sistemi multi core, le cache sono distribuite con la L3 condivisa.
 ### Compulsory
 esse si verificano quando la linea richiesta non è mai stata in cache. 
 ### Conflict
-se sono dovute a un conflitto dovute alla limitata associatività: il dato viene richiesto nella cache, sarebbe stato presente ma è stato rimpiazzato perché unìaltra linea con lo stesso index è stata richiesta in seguito e a causa della limitata associatività ha preso il suo posto. 
+se sono dovute a un conflitto dovute alla limitata associatività: il dato viene richiesto nella cache, sarebbe stato presente ma è stato rimpiazzato perché un'altra linea con lo stesso index è stata richiesta in seguito e a causa della limitata associatività ha preso il suo posto. 
 ### Capacity
 se sono dovute alla limitata capacità della cache: la linea sarebbe stata presente ma essendo la cache di capacità limitata essa è stata rimpiazzata da un’altra.
 ## Prestazioni

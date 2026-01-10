@@ -1,0 +1,5 @@
+Cose da ripassare
+
+- tipo di cache associative                                 FATTO
+- cache physically indexed / tagged vs virtually tagged     FATTO
+- MESI
