@@ -1,0 +1,3 @@
+problema di DES:
+weak keys - procedimento di crifratura e decrifratura uguale - con oracolo posso decifrare (direttamente plaintext)
+semi weak keys - chiavi diverse a coppie - la cifratura della prima è uguale al verso della seconda - applico due volte la encryption con le due coppie e ottengo il plaintext

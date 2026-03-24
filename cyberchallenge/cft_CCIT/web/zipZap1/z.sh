@@ -1,0 +1,1 @@
+/getflag > f.txt

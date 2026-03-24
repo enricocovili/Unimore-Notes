@@ -1,0 +1,48 @@
+
+1. Il World Wide Web e il modello client–server
+Il World Wide Web (WWW) è un sistema di documenti ipertestuali distribuiti, collegati tra loro tramite link e accessibili attraverso Internet mediante un browser. È stato ideato nel 1989 da Tim Berners-Lee presso il CERN per consentire ai ricercatori di condividere informazioni in modo semplice e standardizzato. Il Web si basa sull’integrazione di tre elementi fondamentali: gli URL, che identificano le risorse; il protocollo HTTP, che permette la comunicazione tra client e server; e il linguaggio HTML, che descrive la struttura dei documenti. Il funzionamento del Web segue il modello client–server, in cui il client (tipicamente un browser) invia richieste attive e il server risponde fornendo le risorse richieste. Questo modello consente un’elevata scalabilità, l’accesso distribuito alle informazioni e una gestione centralizzata dei contenuti.
+
+2. URI, URL e URN
+Una URI (Uniform Resource Identifier) è una stringa che permette di identificare in modo univoco una risorsa, sia essa fisica o astratta. Le URI si suddividono principalmente in URL e URN. Un URL (Uniform Resource Locator) indica non solo la risorsa, ma anche la sua posizione in rete e il protocollo da utilizzare per accedervi, specificando quindi “dove” si trova e “come” raggiungerla. Un URN (Uniform Resource Name), invece, fornisce un nome persistente alla risorsa, indipendente dalla sua posizione fisica, ed è pensato per identificazioni stabili nel tempo. In sintesi, tutte le URL e le URN sono URI, ma non tutte le URI sono URL: l’URL include il meccanismo di accesso, mentre l’URN ha solo valore identificativo.
+
+3. HTTP: caratteristiche generali
+HTTP (HyperText Transfer Protocol) è un protocollo di livello applicativo che consente il trasferimento di risorse sul Web, come pagine HTML, immagini e dati strutturati. È basato su un modello request/response, in cui il client invia una richiesta e il server restituisce una risposta. Una caratteristica fondamentale di HTTP è la sua natura stateless, cioè ogni richiesta è indipendente dalle precedenti e non conserva informazioni sullo stato della comunicazione. HTTP utilizza il protocollo TCP/IP per garantire una trasmissione affidabile dei dati. I messaggi HTTP sono composti da una parte di header, che contiene metadati e informazioni di controllo, e da un body, che contiene il contenuto effettivo della risorsa. Il tipo di contenuto viene specificato tramite i MIME type, fondamentali per permettere al client di interpretare correttamente la risposta.
+
+4. Evoluzione di HTTP
+Nel tempo, HTTP ha subito diverse evoluzioni per migliorare prestazioni ed efficienza. HTTP/1.0 prevedeva una connessione TCP separata per ogni richiesta, rendendo la comunicazione poco efficiente. Con HTTP/1.1 sono state introdotte le connessioni persistenti e il pipelining, riducendo il numero di connessioni necessarie. HTTP/2 ha migliorato ulteriormente le prestazioni introducendo il multiplexing, che consente di gestire più richieste simultaneamente sulla stessa connessione, la compressione degli header e il server push. L’ultima evoluzione, HTTP/3, utilizza il protocollo QUIC basato su UDP, eliminando problemi come l’Head-of-Line blocking e migliorando le prestazioni soprattutto in reti instabili o ad alta latenza.
+
+5. Metodi HTTP e codici di stato
+I metodi HTTP definiscono l’azione che il client vuole eseguire sulla risorsa. I più comuni sono GET, utilizzato per recuperare dati; POST, per inviare informazioni al server; PUT e PATCH, per creare o aggiornare risorse; e DELETE, per eliminarle. A ogni richiesta HTTP il server risponde con un codice di stato, che indica l’esito dell’operazione. I codici 2xx segnalano un successo, i 3xx una redirezione, i 4xx un errore del client (come una risorsa non trovata) e i 5xx un errore del server. Questi codici permettono al client di interpretare correttamente la risposta e gestire eventuali errori.
+
+6. Web statico e Web dinamico
+Nel Web statico, le pagine sono file HTML già pronti, memorizzati sul server e inviati al client senza alcuna elaborazione. Questo approccio è semplice, veloce e richiede poche risorse, ma offre scarsa flessibilità. Il Web dinamico, invece, genera i contenuti al momento della richiesta, spesso utilizzando linguaggi server-side e database. Ciò consente di personalizzare le risposte in base all’utente o al contesto, aumentando l’interattività, ma comporta un maggiore carico computazionale sul server e una complessità più elevata.
+
+7. Architettura a 3 tier
+L’architettura 3-tier suddivide un’applicazione in tre livelli distinti: presentazione, logica applicativa e gestione dei dati. Questa separazione migliora la manutenibilità e la chiarezza del sistema. Nella distribuzione verticale, tutti i livelli risiedono sulla stessa macchina o su poche macchine, rendendo il sistema semplice ma poco scalabile. Nella distribuzione orizzontale, invece, ogni livello è collocato su server diversi, permettendo una maggiore scalabilità e affidabilità, a fronte di una maggiore complessità nella gestione dell’infrastruttura.
+
+8. Stack TCP/IP
+Il modello TCP/IP è l’architettura di riferimento per le comunicazioni su Internet ed è composto da quattro livelli. Il livello di accesso alla rete gestisce l’interazione con il mezzo fisico. Il livello Internet si occupa dell’instradamento dei pacchetti tramite IP. Il livello di trasporto fornisce servizi di comunicazione affidabili o non affidabili tramite TCP o UDP. Infine, il livello di applicazione include protocolli come HTTP, FTP e SMTP, che permettono alle applicazioni di comunicare tra loro.
+
+9. HTML e DOM
+HTML è un linguaggio di markup dichiarativo utilizzato per definire la struttura logica dei documenti Web. Un documento HTML è composto da elementi annidati che descrivono titoli, paragrafi, immagini e collegamenti. Il DOM (Document Object Model) è la rappresentazione ad albero del documento HTML caricata dal browser. Grazie al DOM, JavaScript può accedere agli elementi della pagina, modificarne il contenuto o lo stile e reagire agli eventi generati dall’utente, rendendo la pagina dinamica.
+
+10. CSS
+I CSS (Cascading Style Sheets) sono utilizzati per definire la presentazione grafica delle pagine Web, separando il contenuto dalla forma. Il Box Model descrive ogni elemento come un riquadro composto da contenuto, padding, bordo e margine. Le regole CSS possono provenire dal browser, dall’autore della pagina o dall’utente e vengono applicate secondo una gerarchia di priorità. Gli stili possono essere inline, interni o esterni. Alcune proprietà CSS sono ereditarie, come il font, mentre altre, come margin e padding, non lo sono.
+
+11. JavaScript
+JavaScript è un linguaggio di scripting che consente di aggiungere interattività alle pagine Web, gestire eventi e comunicare in modo asincrono con il server. È ampiamente utilizzato nello sviluppo Web, mobile e nei giochi HTML5. Il motore JavaScript esegue il codice seguendo diverse fasi: parsing del codice e creazione dell’AST, interpretazione, profilazione delle prestazioni, compilazione Just-In-Time ed esecuzione. Questo processo consente di ottimizzare le prestazioni durante il runtime.
+
+12. AJAX e XMLHttpRequest
+AJAX è una tecnica che permette alle applicazioni Web di comunicare con il server in modo asincrono, senza ricaricare l’intera pagina. Ciò migliora notevolmente l’esperienza utente, rendendo le applicazioni più reattive. AJAX utilizza l’oggetto XMLHttpRequest, che consente di inviare richieste HTTP e ricevere risposte in background. La comunicazione segue una sequenza ben definita che include la creazione dell’oggetto, l’invio della richiesta e la gestione della risposta tramite callback. I formati di dati più utilizzati sono JSON e XML.
+
+13. Sessioni e cookie
+Poiché HTTP è un protocollo stateless, è necessario introdurre meccanismi per mantenere lo stato tra più richieste. I cookie sono piccoli dati memorizzati sul client, inviati dal server e ritrasmessi a ogni richiesta successiva. Sono utilizzati per gestire autenticazione, carrelli e personalizzazione. Una sessione rappresenta invece un insieme di interazioni correlate tra client e server, spesso identificata tramite un cookie di sessione che permette al server di riconoscere l’utente.
+
+14. Semantic Web e ontologie
+Il Semantic Web ha l’obiettivo di arricchire i dati presenti sul Web con significato esplicito, in modo che possano essere interpretati non solo dagli esseri umani ma anche dalle macchine. Questo migliora l’interoperabilità e l’automazione dei processi. Le principali tecnologie coinvolte sono RDF, OWL, SPARQL e JSON-LD. Un’ontologia definisce formalmente i concetti di un dominio, le loro proprietà e le relazioni tra di essi, fornendo una base strutturata per la rappresentazione della conoscenza.
+
+15. React e Virtual DOM
+React è una libreria JavaScript per la creazione di interfacce utente basate su componenti riutilizzabili. Uno dei suoi concetti chiave è il Virtual DOM, una rappresentazione virtuale del DOM reale che permette di calcolare in modo efficiente le differenze tra stati successivi dell’interfaccia. Solo le parti effettivamente modificate vengono aggiornate nel DOM reale, migliorando le prestazioni. Nei componenti class, il metodo render() definisce la struttura dell’interfaccia da visualizzare in base allo stato e alle proprietà del componente.
+
+
+

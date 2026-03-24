@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "750fa22289ced0cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd53990fc9cba261",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efc0b3e082ec6eee",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "39f48866f2839b89",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d1fbcbdd25f298a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e42da9bd52c79bfd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0b5a6413e66d428e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4cc93fd6e330e285",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "359a38b3e7b31b7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dedd3d562427d98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2758fc4e24da6276",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "187009_Covili.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 187009_Covili"
+            }
+          },
+          {
+            "id": "faa8f0a99c062740",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "187009_Covili.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 187009_Covili"
+            }
+          },
+          {
+            "id": "ebbfa1eb25217f6e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2d459feffb71bc48",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7d35958ca20f1d44",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "187009_Covili.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 187009_Covili"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "efc0b3e082ec6eee",
+  "lastOpenFiles": [
+    "187009_Covili.md",
+    "Pasted image 20260121200905.png",
+    "Pasted image 20260121200836.png",
+    "Pasted image 20260121190728.png",
+    "Pasted image 20260121185752.png",
+    "Pasted image 20260121185701.png",
+    "Welcome.md"
+  ]
+}

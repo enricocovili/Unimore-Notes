@@ -1,0 +1,8 @@
+creo app con vault personale
+mando una richiesta authorize dove specifico la mia app (ricevo wait token)
+non accetto il token (premo X) MA salvo la richiesta POST su BURP
+cambio il vault a quello con la flag
+invio la mia richiesta POST con "deny" modificato ad "allow" (ci sarà redirect)
+effettuo check_auth (get_refresh) con il mio wait token. ricevo refresh token.
+ottengo <auth_token> (/refresh)
+effetuo la /get di flag con header Auth: <auth_token>
