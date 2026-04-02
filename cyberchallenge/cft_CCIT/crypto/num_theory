@@ -1,0 +1,21 @@
+aritmetica modulare / num theory:
+RSA:
+    - l'idea è: cassetto con 2 lucchetti. chiudo con il mio e mando a destinatario
+    metto il mio blocco. lo rimando indietro e il mittente sblocca. dopodichè lo rimanda e io sblocco.
+Diffie-Hellman:
+    -
+
+teorema euclide:
+gcd(a,b) = gcd(a, a mod b)
+Esteso:
+MCD(a,b) = ap + bq --> equazione diofantea
+
+toziente = numero di elem. coprimi con n
+
+teorema eulero-fermat:
+a^phi(n) cong 1 mod n
+
+
+funzioni pycryto utili per RSA
+bytes_to_long
+long_to_bytes
