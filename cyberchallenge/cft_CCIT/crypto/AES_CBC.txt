@@ -1,2 +1,0 @@
-Fare lo XOR con IV e con blocco prencendente PRIMA di AES
-se lo faccio dopo, diventa un ECB ed è attaccabil
